@@ -1,8 +1,8 @@
 import React, { createContext, useState, ReactNode, useContext } from "react";
 
 export interface GlobalContextType {
-	isModal: boolean;
-	setIsModal: React.Dispatch<React.SetStateAction<boolean>>;
+	isToggle: boolean;
+	setIsToggle: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);
@@ -14,13 +14,13 @@ interface GlobalProviderProps {
 export const GlobalContextProvider: React.FC<GlobalProviderProps> = ({
 	children,
 }) => {
-	const [isModal, setIsModal] = useState(false);
+	const [isToggle, setIsToggle] = useState<boolean>(false);
 
 	return (
 		<GlobalContext.Provider
 			value={{
-				isModal,
-				setIsModal,
+				isToggle,
+				setIsToggle,
 			}}
 		>
 			{children}
