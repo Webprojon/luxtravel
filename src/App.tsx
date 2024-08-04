@@ -4,6 +4,9 @@ import { GlobalContextProvider } from "./context/global-context";
 import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import { Routes, Route } from "react-router-dom";
+import WhyUsPage from "./pages/WhyUs/WhyUs";
+import Places from "./pages/Places/Places";
+import Services from "./pages/Services/Services";
 
 function App() {
 	return (
@@ -14,6 +17,9 @@ function App() {
 					<Route path="/" element={<Home />} />
 				</Routes>
 				<About />
+				<WhyUsPage />
+				<Places />
+				<Services />
 				<Footer />
 			</GlobalContextProvider>
 		</main>

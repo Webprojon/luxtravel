@@ -12,6 +12,10 @@ export default function HeaderLists() {
 
 	const handleToggle = () => {
 		setIsToggle(!isToggle);
+
+		if (window.location.pathname === "/tashkent") {
+			console.log("yes it is tashkent");
+		}
 	};
 
 	return (

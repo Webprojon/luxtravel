@@ -27,7 +27,7 @@ export default function About() {
 				className="w-[50%] h-[60vh] mx-auto"
 			></video>
 
-			<div className="text-center mt-10">
+			<div className="text-center mt-14">
 				<h2 className="font-medium text-[27px] leading-5">
 					<span className="font-bold">2,000</span> dan ortiq mijozlarimiz
 					bizning xizmatlarimizdan mamnun
@@ -37,7 +37,7 @@ export default function About() {
 				</p>
 			</div>
 
-			<div className="flex flex-wrap gap-6 my-10">
+			<div className="flex flex-wrap gap-6 mt-10">
 				<img
 					src={clietOne}
 					alt="user img"

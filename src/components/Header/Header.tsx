@@ -1,5 +1,5 @@
 import { RiMenu3Fill } from "react-icons/ri";
-import headerLogo from "../../assets/Images/logo.png";
+import headerLogo from "../../assets/Images/generals/logo.png";
 import { IoClose } from "react-icons/io5";
 import HeaderLang from "./Header-Lang";
 import HeaderLists from "./Header-Lists";
@@ -13,7 +13,7 @@ export default function Header() {
 	};
 
 	return (
-		<header className="absolute left-0 right-0 mt-4 mx-auto lg:max-w-[1250px]">
+		<header className="absolute left-0 right-0 mx-auto lg:max-w-[1250px]">
 			<nav className="flex justify-between items-center">
 				<a href="#main">
 					<img src={headerLogo} alt="logo img" className="w-[5.7rem]" />
