@@ -1,9 +1,9 @@
 import buxoro from "../../assets/Images/places/buxoro.png";
-import samarqand from "../../assets/Images/places/samarqand.png";
-import turkiston from "../../assets/Images/places/turkiston.png";
-import tashkent from "../../assets/Images/places/tashkent.jpg";
-import villa from "../../assets/Images/places/villa.png";
-import zomin from "../../assets/Images/places/zomin.png";
+//import samarqand from "../../assets/Images/places/samarqand.png";
+//import turkiston from "../../assets/Images/places/turkiston.png";
+//import tashkent from "../../assets/Images/places/tashkent.jpg";
+//import villa from "../../assets/Images/places/villa.png";
+//import zomin from "../../assets/Images/places/zomin.png";
 
 export default function Home() {
 	return (
