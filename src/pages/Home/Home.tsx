@@ -1,4 +1,3 @@
-import { useState } from "react";
 import buxoro from "../../assets/Images/places/buxoro.png";
 import samarqand from "../../assets/Images/places/samarqand.png";
 import turkiston from "../../assets/Images/places/turkiston.png";
@@ -7,14 +6,11 @@ import villa from "../../assets/Images/places/villa.png";
 import zomin from "../../assets/Images/places/zomin.png";
 
 export default function Home() {
-	const images = [buxoro, samarqand, turkiston, tashkent, villa, zomin];
-	const [backgroundImage, setBackgroundImage] = useState(images[0]);
-
 	return (
 		<main
 			className="h-[100vh] w-full"
 			style={{
-				background: `linear-gradient(to top, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0) 100%), url("${backgroundImage}") no-repeat center/cover`,
+				background: `linear-gradient(to top, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0) 100%), url("${buxoro}") no-repeat center/cover`,
 			}}
 		>
 			<section className="pt-[9rem] mx-auto lg:max-w-[1250px] tracking-wide">

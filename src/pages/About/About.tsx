@@ -11,21 +11,40 @@ import clietEight from "../../assets/Images/clients-imgs/telegram-cloud-photo-si
 import clietNine from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 3.png";
 
 export default function About() {
+	const clientImages = [
+		{ src: clietOne, alt: "user img" },
+		{ src: clietTwo, alt: "user img" },
+		{
+			src: "",
+			alt: "Placeholder",
+			text: "Bu yerda sizning suratingiz bo'lishi mumkin",
+		},
+		{ src: clietThree, alt: "user img" },
+		{ src: clietFour, alt: "user img" },
+		{ src: clietFive, alt: "user img" },
+		{ src: clietSix, alt: "user img" },
+		{ src: clietSeven, alt: "user img" },
+		{ src: clietEight, alt: "user img" },
+		{ src: clietNine, alt: "user img" },
+	];
+
 	return (
 		<section className="lg:max-w-[1250px] mx-auto tracking-wide text-black/90">
-			<h1 className="text-center mt-10 font-bold leading-5 text-[30px]">
-				Shahar haqida quyidagi video orqali batafsil bilib oling
-			</h1>
+			<div className="hidden">
+				<h1 className="text-center mt-10 font-bold leading-5 text-[30px]">
+					Shahar haqida quyidagi video orqali batafsil bilib oling
+				</h1>
 
-			<video
-				loop
-				muted
-				controls
-				preload="auto"
-				poster={tashkent}
-				src={tashkentVideo}
-				className="w-[50%] h-[60vh] mx-auto"
-			></video>
+				<video
+					loop
+					muted
+					controls
+					preload="auto"
+					poster={tashkent}
+					src={tashkentVideo}
+					className="w-[50%] h-[60vh] mx-auto"
+				></video>
+			</div>
 
 			<div className="text-center mt-14">
 				<h2 className="font-medium text-[27px] leading-5">
@@ -38,54 +57,23 @@ export default function About() {
 			</div>
 
 			<div className="flex flex-wrap gap-6 mt-10">
-				<img
-					src={clietOne}
-					alt="user img"
-					className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
-				/>
-				<img
-					src={clietTwo}
-					alt="user img"
-					className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
-				/>
-				<div className="flex justify-center text-center font-medium items-center w-[230px] h-[160px] rounded-[12px] custom-shadow hover:scale-105 transition-all cursor-pointer ">
-					<p>Bu yerda sizning suratingiz bo'lishi mumkin</p>
-				</div>
-				<img
-					src={clietThree}
-					alt="user img"
-					className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
-				/>
-				<img
-					src={clietFour}
-					alt="user img"
-					className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
-				/>
-				<img
-					src={clietFive}
-					alt="user img"
-					className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
-				/>
-				<img
-					src={clietSix}
-					alt="user img"
-					className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
-				/>
-				<img
-					src={clietSeven}
-					alt="user img"
-					className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
-				/>
-				<img
-					src={clietEight}
-					alt="user img"
-					className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
-				/>
-				<img
-					src={clietNine}
-					alt="user img"
-					className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
-				/>
+				{clientImages.map((client, index) => {
+					return client.src ? (
+						<img
+							key={index}
+							src={client.src}
+							alt={client.alt}
+							className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
+						/>
+					) : (
+						<div
+							key={index}
+							className="flex justify-center text-center font-medium items-center w-[230px] h-[160px] rounded-[12px] custom-shadow hover:scale-105 transition-all cursor-pointer"
+						>
+							<p>{client.text}</p>
+						</div>
+					);
+				})}
 			</div>
 		</section>
 	);

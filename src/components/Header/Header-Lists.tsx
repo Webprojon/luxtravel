@@ -12,88 +12,36 @@ export default function HeaderLists() {
 
 	const handleToggle = () => {
 		setIsToggle(!isToggle);
-
-		if (window.location.pathname === "/tashkent") {
-			console.log("yes it is tashkent");
-		}
 	};
+
+	const destinations = [
+		{ path: "/villa", src: villa, alt: "imgs", name: "Dam olish maskanlari" },
+		{ path: "/", src: buxoro, alt: "imgs", name: "Buxoro" },
+		{ path: "/samarkand", src: samarqand, alt: "imgs", name: "Samarqand" },
+		{ path: "/tashkent", src: tashkent, alt: "imgs", name: "Tasheknt" },
+		{ path: "/zomin", src: zomin, alt: "imgs", name: "Zomin" },
+		{ path: "/turkiston", src: turkiston, alt: "imgs", name: "Turkiston" },
+	];
 
 	return (
 		<div
 			onClick={handleToggle}
 			className="flex flex-col gap-y-8 px-6 mt-12 pb-16 h-[81vh] overflow-y-auto no-scroll"
 		>
-			<Link
-				to="/villa"
-				className="flex items-center gap-x-6 font-semibold text-[18px] tracking-wide hover:text-blue-400 transition-all cursor-pointer"
-			>
-				<img
-					src={villa}
-					alt="imgs"
-					className="w-[5rem] h-[5rem] object-cover rounded-full"
-				/>
-				Dam olish maskanlari
-			</Link>
-
-			<Link
-				to="/"
-				className="flex items-center gap-x-6 font-semibold text-[18px] tracking-wide hover:text-blue-400 transition-all cursor-pointer"
-			>
-				<img
-					src={buxoro}
-					alt="imgs"
-					className="w-[5rem] h-[5rem] object-cover rounded-full"
-				/>
-				Buxoro
-			</Link>
-
-			<Link
-				to="/samarkand"
-				className="flex items-center gap-x-6 font-semibold text-[18px] tracking-wide hover:text-blue-400 transition-all cursor-pointer"
-			>
-				<img
-					src={samarqand}
-					alt="imgs"
-					className="w-[5rem] h-[5rem] object-cover rounded-full"
-				/>
-				Samarqand
-			</Link>
-
-			<Link
-				to="/tashkent"
-				className="flex items-center gap-x-6 font-semibold text-[18px] tracking-wide hover:text-blue-400 transition-all cursor-pointer"
-			>
-				<img
-					src={tashkent}
-					alt="imgs"
-					className="w-[5rem] h-[5rem] object-cover rounded-full"
-				/>
-				Tasheknt
-			</Link>
-
-			<Link
-				to="/zomin"
-				className="flex items-center gap-x-6 font-semibold text-[18px] tracking-wide hover:text-blue-400 transition-all cursor-pointer"
-			>
-				<img
-					src={zomin}
-					alt="imgs"
-					className="w-[5rem] h-[5rem] object-cover rounded-full"
-				/>
-				Zomin
-			</Link>
-
-			<Link
-				to="/turkiston"
-				className="flex items-center gap-x-5 font-semibold text-[18px] tracking-wide hover:text-blue-400 transition-all cursor-pointer"
-			>
-				<img
-					src={turkiston}
-					alt="imgs"
-					className="w-[5rem] h-[5rem] object-cover rounded-full"
-				/>
-				Turkiston
-			</Link>
+			{destinations.map((destination) => (
+				<Link
+					key={destination.path}
+					to={destination.path}
+					className="flex items-center gap-x-6 font-semibold text-[18px] tracking-wide hover:text-blue-400 transition-all cursor-pointer"
+				>
+					<img
+						src={destination.src}
+						alt={destination.alt}
+						className="w-[5rem] h-[5rem] object-cover rounded-full"
+					/>
+					{destination.name}
+				</Link>
+			))}
 		</div>
 	);
 }
