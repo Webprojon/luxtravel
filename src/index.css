@@ -26,3 +26,12 @@ html::-webkit-scrollbar {
 }
 
 /* ABOUT STYLES */
+
+/* CONTACT STYLES */
+.resize {
+	resize: none;
+}
+
+.resize::-webkit-scrollbar {
+	display: none;
+}
