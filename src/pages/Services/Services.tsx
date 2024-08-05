@@ -1,6 +1,6 @@
 export default function Services() {
 	return (
-		<section>
+		<section id="service" className="scroll-mt-28">
 			<div className="my-14 lg:max-w-[1070px] mx-auto">
 				<div className="text-center tracking-wide text-black/80">
 					<h2 className="text-[30px] font-bold">

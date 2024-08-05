@@ -1,7 +1,14 @@
 import { FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import logo from "..//../assets/Images/generals/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+		});
+	};
+
 	return (
 		<footer className="mt-[10rem]">
 			<div className="flex justify-between mb-10 mx-auto lg:max-w-[1070px]">
@@ -31,28 +38,50 @@ export default function Footer() {
 
 				<div className="flex flex-col gap-y-2">
 					<h2 className="font-bold text-[20px]">Kampaniya</h2>
-					<a href="#about" className="text-black/70 font-medium">Biz haqimizda</a>
-					<a href="#about" className="text-black/70 font-medium">Nega biz ?</a>
-					<a href="#about" className="text-black/70 font-medium">Bog'laish</a>
-					<a href="#about" className="text-black/70 font-medium">Xizmatlar</a>
+					<a href="#about" className="text-black/70 font-medium">
+						Biz haqimizda
+					</a>
+					<a href="#whyus" className="text-black/70 font-medium">
+						Nega biz ?
+					</a>
+					<a href="#contact" className="text-black/70 font-medium">
+						Bog'laish
+					</a>
+					<a href="#service" className="text-black/70 font-medium">
+						Xizmatlar
+					</a>
 				</div>
 
-				<div className="flex flex-col gap-y-2">
+				<div onClick={scrollToTop} className="flex flex-col gap-y-2">
 					<h2 className="font-bold text-[20px]">Yo'nalishlar</h2>
-					<a href="#about" className="text-black/70 font-medium">Samarqand</a>
-					<a href="#about" className="text-black/70 font-medium">Buxoro</a>
-					<a href="#about" className="text-black/70 font-medium">Tashkent</a>
-					<a href="#about" className="text-black/70 font-medium">Turkiston</a>
+					<Link to="/samarkand" className="text-black/70 font-medium">
+						Samarqand
+					</Link>
+					<Link to="/buxoro" className="text-black/70 font-medium">
+						Buxoro
+					</Link>
+					<Link to="/tashkent" className="text-black/70 font-medium">
+						Tashkent
+					</Link>
+					<Link to="/turkiston" className="text-black/70 font-medium">
+						Turkiston
+					</Link>
 				</div>
 
-				<div className="flex flex-col gap-y-2">
-					<a href="#about" className="text-black/70 font-medium">Zomin</a>
-					<a href="#about" className="text-black/70 font-medium">Dam olish maskanlari</a>
+				<div onClick={scrollToTop} className="flex flex-col gap-y-2">
+					<Link to="/zomin" className="text-black/70 font-medium">
+						Zomin
+					</Link>
+					<Link to="/villa" className="text-black/70 font-medium">
+						Dam olish maskanlari
+					</Link>
 				</div>
 			</div>
 
 			<div className="border-t text-center">
-				<p className="font-medium my-5 tracking-wider text-black/70">Copyright @Lux Travel</p>
+				<p className="font-medium my-5 tracking-wider text-black/70">
+					Copyright @Lux Travel
+				</p>
 			</div>
 		</footer>
 	);

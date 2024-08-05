@@ -44,7 +44,8 @@ export default function WhyUsPage() {
 			style={{
 				background: `linear-gradient(to top, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0) 100%), url("${bgImg}") no-repeat center/cover`,
 			}}
-			className="flex flex-col justify-center h-[90vh] mt-12"
+			id="whyus"
+			className="scroll-mt-20 flex flex-col justify-center h-[90vh] mt-12"
 		>
 			<div className="flex flex-col justify-center items-center lg:max-w-[1250px] mx-auto tracking-wide">
 				<div className="text-center">

@@ -9,6 +9,7 @@ import clietSix from "../../assets/Images/clients-imgs/telegram-cloud-document-2
 import clietSeven from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 1.png";
 import clietEight from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 2.png";
 import clietNine from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 3.png";
+import { useLocation } from "react-router-dom";
 
 export default function About() {
 	const clientImages = [
@@ -28,9 +29,17 @@ export default function About() {
 		{ src: clietNine, alt: "user img" },
 	];
 
+	const location = useLocation();
+	console.log(location.pathname);
+
 	return (
-		<section className="lg:max-w-[1250px] mx-auto tracking-wide text-black/90">
-			<div className="hidden">
+		<section
+			id="about"
+			className="scroll-mt-32 lg:max-w-[1250px] mx-auto tracking-wide text-black/90"
+		>
+			<div
+				className={`${location.pathname === "/tashkent" ? "block" : "hidden"}`}
+			>
 				<h1 className="text-center mt-10 font-bold leading-5 text-[30px]">
 					Shahar haqida quyidagi video orqali batafsil bilib oling
 				</h1>

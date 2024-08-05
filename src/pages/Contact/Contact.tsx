@@ -1,9 +1,48 @@
+import axios from "axios";
+import { useState } from "react";
+import toast from "react-hot-toast";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineMail, MdOutlinePhoneInTalk } from "react-icons/md";
 
 export default function Contact() {
+	const [nameValue, setNameValue] = useState("");
+	const [phoneValue, setPhoneValue] = useState("");
+	const [textAreaValue, settextAreaValue] = useState("");
+	const [loading, setLoading] = useState(false);
+
+	const SendMessage = (event: React.FormEvent<HTMLFormElement>) => {
+		setLoading(true);
+		event.preventDefault();
+		const token = "6948864577:AAHTh7RO9xCZ6WFKQCle7YqvOnbfcXZIaP4";
+		const chat_id = "5850460435";
+		const url = `https://api.telegram.org/bot${token}/sendMessage`;
+		const messageContent = `Ism:  ${nameValue} \nTelefon no'mer: ${phoneValue} \nSavol: ${textAreaValue}`;
+
+		axios({
+			url: url,
+			method: "POST",
+			data: {
+				chat_id: chat_id,
+				text: messageContent,
+			},
+		})
+			.then(() => {
+				setNameValue("");
+				setPhoneValue("");
+				settextAreaValue("");
+				toast.success("Successfully Sent!");
+			})
+			.catch((error) => {
+				console.log(error);
+				toast.error("Could not sent.");
+			})
+			.finally(() => {
+				setLoading(false);
+			});
+	};
+
 	return (
-		<section id="contact" className="my-10">
+		<section id="contact" className="my-10 scroll-mt-28">
 			<h2 className="mb-10 text-center text-[30px] text-black/85 font-bold">
 				Biz bilan bog'laning
 			</h2>
@@ -12,28 +51,40 @@ export default function Contact() {
 					<h2 className="font-bold text-[28px] leading-none">
 						Savolingiz bormi ?
 					</h2>
-					<form className="flex items-start gap-y-6 flex-col mt-12">
+					<form
+						onSubmit={SendMessage}
+						className="flex items-start gap-y-6 flex-col mt-12"
+					>
 						<input
+							required
 							type="text"
+							value={nameValue}
 							placeholder="Ismingiz"
+							onChange={(e) => setNameValue(e.target.value)}
 							className="bg-transparent border border-gray-600 rounded-md w-full py-2 px-3 placeholder:text-white outline-none"
 						/>
 						<input
-							type="text"
+							required
+							type="tel"
 							placeholder="+998"
+							value={phoneValue}
+							onChange={(e) => setPhoneValue(e.target.value)}
 							className="bg-transparent border border-gray-600 rounded-md w-full py-2 px-3 placeholder:text-white outline-none"
 						/>
 						<textarea
 							rows={3}
+							required
+							value={textAreaValue}
 							placeholder="Savollaringiz"
+							onChange={(e) => settextAreaValue(e.target.value)}
 							className="resize bg-transparent border border-gray-600 rounded-md w-full py-2 px-3 placeholder:text-white outline-none"
 						></textarea>
 						<div className="flex items-center gap-x-2">
-							<input type="checkbox" name="checkbox" id="checkbox" />
+							<input type="checkbox" name="checkbox" id="checkbox" required />
 							<label htmlFor="checkbox">shartlarga roziman</label>
 						</div>
 						<button className="mt-4 py-3 px-20 bg-amber-600 font-semibold text-white tracking-wider text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
-							Yuborish
+							{loading ? "Yuborilmoqda" : "Yuborish"}
 						</button>
 					</form>
 				</div>
