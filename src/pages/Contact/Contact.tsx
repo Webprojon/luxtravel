@@ -42,11 +42,11 @@ export default function Contact() {
 	};
 
 	return (
-		<section id="contact" className="my-10 scroll-mt-28">
+		<section id="contact" className="mt-20 scroll-mt-28">
 			<h2 className="mb-10 text-center text-[30px] text-black/85 font-bold">
 				Biz bilan bog'laning
 			</h2>
-			<div className="bg-black/85 rounded-[15px] py-10 flex justify-between mx-auto lg:max-w-[1070px]">
+			<div className="bg-black/85 rounded-[15px] py-10 flex justify-evenly mx-auto lg:max-w-[1250px]">
 				<div className="w-[500px] text-white pl-10 pr-20">
 					<h2 className="font-bold text-[28px] leading-none">
 						Savolingiz bormi ?
@@ -79,11 +79,13 @@ export default function Contact() {
 							onChange={(e) => settextAreaValue(e.target.value)}
 							className="resize bg-transparent border border-gray-600 rounded-md w-full py-2 px-3 placeholder:text-white outline-none"
 						></textarea>
+
 						<div className="flex items-center gap-x-2">
 							<input type="checkbox" name="checkbox" id="checkbox" required />
-							<label htmlFor="checkbox">shartlarga roziman</label>
+							<label htmlFor="checkbox">Offerta shartlarga roziman</label>
 						</div>
-						<button className="mt-4 py-3 px-20 bg-amber-600 font-semibold text-white tracking-wider text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
+
+						<button className="mt-4 py-3 px-20 bg-green-500 font-semibold text-white tracking-wider text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
 							{loading ? "Yuborilmoqda" : "Yuborish"}
 						</button>
 					</form>
@@ -98,8 +100,8 @@ export default function Contact() {
 
 					<div>
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.98228271276!2d20.896613431747056!3d52.232887094352805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarsaw!5e0!3m2!1sen!2spl!4v1722849748355!5m2!1sen!2spl"
 							className="my-4 w-full h-[32vh] rounded-md"
+							src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d11984.772071838523!2d69.26513!3d41.326416!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE5JzM1LjEiTiA2OcKwMTUnNTQuNSJF!5e0!3m2!1sru!2sus!4v1722885376047!5m2!1sru!2sus"
 						></iframe>
 					</div>
 
@@ -121,12 +123,12 @@ export default function Contact() {
 							+998 99 123 45 67
 						</a>
 						<a
-							href="mailto:example@mail.ru"
+							href="mailto:luxtravel@mail.ru"
 							target="blank"
 							className="flex items-center gap-x-2"
 						>
 							<MdOutlineMail className="size-6" />
-							example@mail.ru
+							luxtravel@mail.ru
 						</a>
 					</div>
 				</div>

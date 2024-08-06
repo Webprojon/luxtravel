@@ -1,4 +1,19 @@
 export default function Home() {
+	const sections = [
+		{
+			title: "Tajriba",
+			description: "5 yildan ortiq tajribaga ega jamoa",
+		},
+		{
+			title: "Qulay narxlar",
+			description: "Umumiy sayohat xarajatlari uchun xamyonbop narxlar",
+		},
+		{
+			title: "Keng tanlov",
+			description: "O'zbekiston hamda qo'shni davlatlarga sahohatlar",
+		},
+	];
+
 	return (
 		<section
 			id="main"
@@ -12,36 +27,19 @@ export default function Home() {
 			</p>
 
 			<div className="flex gap-x-7 mt-14">
-				<div className="bg-white opacity-90 py-8 px-5 w-[240px] rounded-[20px] custom-shadow cursor-pointer hover:scale-105 transition-all">
-					<h2 className="font-bold leading-5 text-black/80 text-[25px]">
-						Tajriba
-					</h2>
-					<p className="font-medium leading-5 text-black/70 pt-4">
-						<span className="text-sky-600">10 yildan</span> ortiq tajribaga ega
-						jamoa
-					</p>
-				</div>
-
-				<div className="bg-white opacity-90 py-8 px-5 w-[240px] rounded-[20px] custom-shadow cursor-pointer hover:scale-105 transition-all">
-					<h2 className="font-bold leading-5 text-black/80 text-[25px]">
-						Qulay narxlar
-					</h2>
-					<p className="font-medium leading-5 text-black/70 pt-4">
-						7 kunlik sayohat
-						<span className="text-sky-600"> $100 dan </span>
-						boshlanadi
-					</p>
-				</div>
-
-				<div className="bg-white opacity-90 py-8 px-5 w-[240px] rounded-[20px] custom-shadow cursor-pointer hover:scale-105 transition-all">
-					<h2 className="font-bold leading-5 text-black/80 text-[25px]">
-						Keng tanlov
-					</h2>
-					<p className="font-medium leading-5 text-black/70 pt-4">
-						Sayohatingiz davomida
-						<span className="text-sky-600"> 10dan...</span>
-					</p>
-				</div>
+				{sections.map((item, i) => (
+					<div
+						key={i}
+						className="bg-white opacity-90 py-8 px-5 w-[250px] rounded-[20px] custom-shadow cursor-pointer hover:scale-105 transition-all"
+					>
+						<h2 className="font-bold leading-5 text-black/80 text-[25px]">
+							{item.title}
+						</h2>
+						<p className="font-medium leading-5 text-black/70 pt-4">
+							{item.description}
+						</p>
+					</div>
+				))}
 			</div>
 
 			<div className="flex gap-x-8 mt-12">

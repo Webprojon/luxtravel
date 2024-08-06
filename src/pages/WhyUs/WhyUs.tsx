@@ -2,39 +2,35 @@ import bgImg from "../../assets/Images/generals/image 109.png";
 const cards = [
 	{
 		title: "Tajriba",
-		description: "ortiq tajribaga ega jamoa",
-		highlight: "10 yildan",
+		description: "5 yildan ortiq tajribaga ega jamoa",
 	},
 	{
-		title: "Qulay narxlar",
-		description: "sayohat $100 dan boshlanadi",
-		highlight: "7 kunlik",
-	},
-	{
-		title: "Keng tanlov",
-		description: "Sayohatingiz davomida 10dan...",
-	},
-	{
-		title: "Go'zal shaharlar",
-		description: "Sayohatingiz davomida 10dan...",
-	},
-	{
-		title: "Go'zal shaharlar",
-		description: "Sayohatingiz davomida 10dan...",
+		title: "Turizm sektori",
+		description: "Sifatli xizmat ko'rsatish va tanlovda yordam beramiz",
 	},
 	{
 		title: "Keng tanlov",
-		description: "Sayohatingiz davomida 10dan...",
-	},
-	{
-		title: "Tajriba",
-		description: "ortiq tajribaga ega jamoa",
-		highlight: "10 yildan",
+		description: "10 dan ziyod dam olish va sayohat maskanlari",
 	},
 	{
 		title: "Qulay narxlar",
-		description: "sayohat $100 dan boshlanadi",
-		highlight: "7 kunlik",
+		description: "Sifatli xizmat ko'rsatish evaziga hamyonbop narxlar",
+	},
+	{
+		title: "Xavfsizlik",
+		description: "Sayohatingzi xavfsiz bo'lishiga kafolat beramiz",
+	},
+	{
+		title: "Ishonch",
+		description: "Bizga 2000 dan ortiq mijozlar ishonch bildirgan",
+	},
+	{
+		title: "Umumiy guruh",
+		description: "Safar davomida yeg'ilgan kontentlar bitta guruhda",
+	},
+	{
+		title: "Yuqori sifat",
+		description: "Sayohatingiz davomida komfort mashinalar",
 	},
 ];
 
@@ -45,7 +41,7 @@ export default function WhyUsPage() {
 				background: `linear-gradient(to top, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0) 100%), url("${bgImg}") no-repeat center/cover`,
 			}}
 			id="whyus"
-			className="scroll-mt-20 flex flex-col justify-center h-[90vh] mt-12"
+			className="mt-14 scroll-mt-20 flex flex-col justify-center h-[90vh]"
 		>
 			<div className="flex flex-col justify-center items-center lg:max-w-[1250px] mx-auto tracking-wide">
 				<div className="text-center">
@@ -67,7 +63,6 @@ export default function WhyUsPage() {
 								{card.title}
 							</h2>
 							<p className="font-medium leading-5 text-black/70 pt-4">
-								<span className="text-sky-600">{card.highlight}</span>{" "}
 								{card.description}
 							</p>
 						</div>

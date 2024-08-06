@@ -9,7 +9,6 @@ import clietSix from "../../assets/Images/clients-imgs/telegram-cloud-document-2
 import clietSeven from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 1.png";
 import clietEight from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 2.png";
 import clietNine from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 3.png";
-import { useLocation } from "react-router-dom";
 
 export default function About() {
 	const clientImages = [
@@ -29,19 +28,14 @@ export default function About() {
 		{ src: clietNine, alt: "user img" },
 	];
 
-	const location = useLocation();
-	console.log(location.pathname);
-
 	return (
 		<section
 			id="about"
-			className="scroll-mt-32 lg:max-w-[1250px] mx-auto tracking-wide text-black/90"
+			className="mt-14 scroll-mt-32 lg:max-w-[1250px] mx-auto tracking-wide text-black/90"
 		>
-			<div
-				className={`${location.pathname === "/tashkent" ? "block" : "hidden"}`}
-			>
-				<h1 className="text-center mt-10 font-bold leading-5 text-[30px]">
-					Shahar haqida quyidagi video orqali batafsil bilib oling
+			<div className="hidden">
+				<h1 className="text-center font-bold leading-5 text-[30px]">
+					Biz haqimizda quyidagi video orqali batafsil bilib oling
 				</h1>
 
 				<video
@@ -51,11 +45,11 @@ export default function About() {
 					preload="auto"
 					poster={tashkent}
 					src={tashkentVideo}
-					className="w-[50%] h-[60vh] mx-auto"
+					className="h-[60vh] mx-auto mt-12"
 				></video>
 			</div>
 
-			<div className="text-center mt-14">
+			<div className="mt-10 text-center">
 				<h2 className="font-medium text-[27px] leading-5">
 					<span className="font-bold">2,000</span> dan ortiq mijozlarimiz
 					bizning xizmatlarimizdan mamnun

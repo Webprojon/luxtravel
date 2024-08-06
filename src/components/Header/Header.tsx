@@ -31,9 +31,8 @@ export default function Header() {
 
 	return (
 		<header
-			className={`${
-				isScrolled ? "bg-black z-[999]" : "bg-transparent"
-			}  fixed left-0 right-0`}
+			className={`
+				${isScrolled ? "bg-black z-[999]" : "bg-transparent"}  fixed left-0 right-0`}
 		>
 			<div className="mx-auto lg:max-w-[1250px]">
 				<nav className="flex justify-between items-center">

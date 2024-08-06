@@ -14,6 +14,8 @@ import Turkiston from "./pages/Turkistan";
 import Villa from "./pages/Villa";
 import Zomin from "./pages/Zomin";
 import { Toaster } from "react-hot-toast";
+import Networks from "./components/Networks";
+import FaqPage from "./pages/FAQ/FaqPage";
 
 function App() {
 	return (
@@ -21,19 +23,21 @@ function App() {
 			<GlobalContextProvider>
 				<Header />
 				<Routes>
-					<Route path="/" element={<Buxoro />} />
+					<Route path="/" element={<Villa />} />
+					<Route path="/buxoro" element={<Buxoro />} />
 					<Route path="/tashkent" element={<Tashkent />} />
 					<Route path="/samarkand" element={<Samarkand />} />
 					<Route path="/turkiston" element={<Turkiston />} />
-					<Route path="/villa" element={<Villa />} />
 					<Route path="/zomin" element={<Zomin />} />
 				</Routes>
 				<About />
 				<WhyUsPage />
-				<Places />
 				<Services />
+				<Places />
+				<FaqPage />
 				<Contact />
 				<Footer />
+				<Networks />
 				<Toaster position="top-center" />
 			</GlobalContextProvider>
 		</main>

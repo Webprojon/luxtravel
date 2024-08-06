@@ -26,6 +26,9 @@ html::-webkit-scrollbar {
 }
 
 /* ABOUT STYLES */
+.shape {
+	clip-path: polygon(87% 0, 13% 0, 50% 28%);
+}
 
 /* CONTACT STYLES */
 .resize {
