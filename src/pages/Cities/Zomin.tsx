@@ -1,5 +1,5 @@
-import zomin from "../assets/Images/places/zomin.png";
-import Home from "./Home/Home";
+import zomin from "../../assets/Images/places/zomin.png";
+import Home from "../Home/Home";
 
 export default function Zomin() {
 	return (

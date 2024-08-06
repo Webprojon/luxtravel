@@ -1,5 +1,5 @@
-import tashkent from "../assets/Images/places/tashkent.jpg";
-import Home from "./Home/Home";
+import tashkent from "../../assets/Images/places/tashkent.jpg";
+import Home from "../Home/Home";
 
 export default function Tashkent() {
 	return (

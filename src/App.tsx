@@ -7,15 +7,15 @@ import WhyUsPage from "./pages/WhyUs/WhyUs";
 import Places from "./pages/Places/Places";
 import Services from "./pages/Services/Services";
 import Contact from "./pages/Contact/Contact";
-import Buxoro from "./pages/Buxoro";
-import Tashkent from "./pages/Tashkent";
-import Samarkand from "./pages/Samarkand";
-import Turkiston from "./pages/Turkistan";
-import Villa from "./pages/Villa";
-import Zomin from "./pages/Zomin";
+import Tashkent from "./pages/Cities/Tashkent";
+import Turkiston from "./pages/Cities/Turkistan";
+import Villa from "./pages/Cities/Villa";
+import Zomin from "./pages/Cities/Zomin";
 import { Toaster } from "react-hot-toast";
 import Networks from "./components/Networks";
 import FaqPage from "./pages/FAQ/FaqPage";
+import Buxoro from "./pages/Cities/Buxoro";
+import Samarkand from "./pages/Cities/Samarkand";
 
 function App() {
 	return (

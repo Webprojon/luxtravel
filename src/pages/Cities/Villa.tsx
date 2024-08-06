@@ -1,5 +1,5 @@
-import villa from "../assets/Images/places/villa.png";
-import Home from "./Home/Home";
+import villa from "../../assets/Images/places/villa.png";
+import Home from "../Home/Home";
 
 export default function Villa() {
 	return (

@@ -1,5 +1,5 @@
-import buxoro from "../assets/Images/places/buxoro.png";
-import Home from "./Home/Home";
+import buxoro from "../../assets/Images/places/buxoro.png";
+import Home from "../Home/Home";
 
 export default function Buxoro() {
 	return (

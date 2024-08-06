@@ -1,5 +1,5 @@
-import samarqand from "../assets/Images/places/samarqand.png";
-import Home from "./Home/Home";
+import samarqand from "../../assets/Images/places/samarqand.png";
+import Home from "../Home/Home";
 
 export default function Samarkand() {
 	return (

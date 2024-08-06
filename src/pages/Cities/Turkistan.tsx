@@ -1,6 +1,5 @@
-import turkiston from "../assets/Images/places/turkiston.png";
-
-import Home from "./Home/Home";
+import turkiston from "../../assets/Images/places/turkiston.png";
+import Home from "../Home/Home";
 
 export default function Turkiston() {
 	return (
