@@ -296,7 +296,7 @@ export default function Services() {
 					<p className="xs:text-[18px] mt-2 font-medium">{t("service-p")}</p>
 				</div>
 
-				<div className="grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3  gap-4 md:gap-x-20 w-full mt-12">
+				<div className="grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-14 md:gap-x-20 w-full mt-12">
 					{changeInformations.map((item) => (
 						<div
 							key={item.day}
@@ -310,12 +310,20 @@ export default function Services() {
 						</div>
 					))}
 				</div>
-				<button className="mt-6 py-3 px-9 bg-green-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
-					{t("service-btn")}
-				</button>
+				<a href="#contact">
+					<button className="mt-12 py-3 px-9 bg-green-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
+						{t("service-btn")}
+					</button>
+				</a>
 
-				<div className="relative w-full flex flex-col md:flex-row justify-between gap-y-4 md:p-12 tracking-wide border-2 border-green-400 rounded-[20px] mt-20">
-					<div className="absolute -top-9 left-[50%] -translate-x-1/2 md:-translate-x-0 md:left-[4rem] bg-green-400 text-white px-12 py-[3px] rounded-t-[15px] flex justify-center items-center font-bold text-[20px]">
+				<div
+					className="max-w-[500px] sm:max-w-[750px] md:max-w-[100%] relative w-full flex flex-col sm:flex-row flex-wrap justify-between
+				 gap-y-4 px-6 py-8 md:p-12 tracking-wide border-2 border-green-400 rounded-[20px] mt-[6rem]"
+				>
+					<div
+						className="absolute -top-9 left-[50%] -translate-x-1/2 md:-translate-x-0 md:left-[4rem] bg-green-400 text-white px-12 py-[3px] 
+					rounded-t-[15px] flex justify-center items-center font-bold text-[20px]"
+					>
 						{t("service-cost")}
 					</div>
 					<div className="absolute top-[1px] left-[50%] -translate-x-1/2 md:-translate-x-0 md:left-[5.4rem] shape bg-green-400 w-[100px] h-[80px]"></div>
@@ -323,10 +331,10 @@ export default function Services() {
 					{
 						<div className="flex flex-col gap-y-4">
 							{changeFirstColumnServices.map((service, index) => (
-								<span key={index} className="flex items-center">
+								<div className="flex">
 									<GiCheckMark className="size-4 bg-green-400 text-white rounded-full w-[1.4rem] h-[1.4rem] p-1 mr-4" />
-									{service}
-								</span>
+									<span key={index}>{service}</span>
+								</div>
 							))}
 						</div>
 					}
@@ -334,28 +342,30 @@ export default function Services() {
 					{
 						<div className="flex flex-col gap-y-4">
 							{changeSecondColumnServices.map((service, index) => (
-								<span key={index} className="flex items-center">
+								<div className="flex">
 									<GiCheckMark className="size-4 bg-green-400 text-white rounded-full w-[1.4rem] h-[1.4rem] p-1 mr-4" />
-									{service}
-								</span>
+									<span key={index}>{service}</span>
+								</div>
 							))}
 						</div>
 					}
 
-					<div className="flex flex-col items-center">
-						{changeHeadings.map((item) => (
-							<>
+					<div className="flex flex-col items-center mt-6 md:mt-0">
+						{changeHeadings.map((item, i) => (
+							<div key={i}>
 								<span className="px-6 uppercase py-[4px] text-white text-[14px] bg-green-400 font-medium rounded-md">
 									{item.countOfPeople}
 								</span>
-								<p className="font-medium text-[34px] mt-4 text-black/80">
+								<p className="font-medium text-[28px] md:text-[34px] mt-4 text-black/80">
 									{item.price} so'm
 								</p>
-							</>
+							</div>
 						))}
-						<button className="mt-8 py-3 px-10 bg-green-400 text-white rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
-							{t("service-bron-btn")}
-						</button>
+						<a href="#contact">
+							<button className="mt-4 md:mt-8 py-3 px-10 bg-green-400 text-white rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
+								{t("service-bron-btn")}
+							</button>
+						</a>
 						<p className="font-medium mt-4 text-black/70 text-[17px]">
 							{t("service-limited-place")}
 						</p>

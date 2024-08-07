@@ -19,8 +19,11 @@ export default function Footer() {
 	}, [title]);
 
 	return (
-		<footer className="">
-			<div className="mt-[8rem] flex justify-between mb-10 mx-auto lg:max-w-[1250px]">
+		<footer>
+			<div
+				className="max-w-[500px] mt-14 md:mt-[8rem] pl-6 grid xs:grid-cols-2 sm:grid-cols-3
+			 md:grid-cols-4 gap-y-8 gap-x-20 mb-10 mx-auto xs:max-w-[460px] sm:max-w-[760px] md:max-w-[925px] lg:max-w-[1250px]"
+			>
 				<div className="w-[250px]">
 					<a href="#main">
 						<img
@@ -31,7 +34,10 @@ export default function Footer() {
 					</a>
 					<p className="my-4 text-black/70 font-medium">{t("footer-p")}</p>
 					<div className="flex gap-x-5 text-green-600">
-						<a href="https://www.instagram.com/" target="blank">
+						<a
+							href="https://www.instagram.com/latifov_izzat?igsh=MTh6d3I3M2V1cnFmYg=="
+							target="blank"
+						>
 							<FaInstagram className="size-7" />
 						</a>
 						<a href="https://www.whatsapp.com/" target="blank">

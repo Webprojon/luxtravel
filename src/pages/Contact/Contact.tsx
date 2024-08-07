@@ -30,6 +30,9 @@ export default function Contact() {
 			},
 		})
 			.then(() => {
+				setTimeout(() => {
+					setIsModal(true);
+				}, 1000);
 				setNameValue("");
 				setPhoneValue("");
 				settextAreaValue("");
@@ -43,16 +46,21 @@ export default function Contact() {
 	};
 
 	return (
-		<section id="contact" className="mt-20 scroll-mt-28">
-			<h2 className="mb-10 text-center text-[30px] text-black/85 font-bold">
+		<section id="contact" className="mt-10 md:mt-20 scroll-mt-28 px-2">
+			<h2 className="mb-5 md:mb-10 text-center text-[30px] text-black/85 font-bold">
 				{t("contact-h2")}
 			</h2>
-			<div className="bg-black/85 rounded-[15px] py-10 flex justify-evenly mx-auto lg:max-w-[1250px]">
-				<div className="w-[500px] text-white pl-10 pr-20">
-					<p className="font-bold text-[28px] leading-none">{t("contact-p")}</p>
+			<div
+				className="bg-black/85 max-w-[500px] rounded-[10px] sm:rounded-[15px] p-5 md:py-10 flex
+			 flex-col-reverse sm:flex-row justify-evenly mx-auto xs:max-w-[460px] sm:max-w-[760px] md:max-w-[925px] lg:max-w-[1250px]"
+			>
+				<div className="md:w-[500px] text-white mt-6 md:mt-0 sm:pl-10 sm:pr-20">
+					<p className="font-bold text-[22px] md:text-[28px] leading-none">
+						{t("contact-p")}
+					</p>
 					<form
 						onSubmit={SendMessage}
-						className="flex items-start gap-y-6 flex-col mt-12"
+						className="flex items-start gap-y-6 flex-col mt-6 md:mt-12"
 					>
 						<input
 							required
@@ -84,26 +92,23 @@ export default function Contact() {
 							<label htmlFor="checkbox">{t("contact-agree")}</label>
 						</div>
 
-						<button
-							onClick={() => setIsModal(true)}
-							className="mt-4 py-3 px-20 bg-green-500 font-semibold text-white tracking-wider text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow"
-						>
+						<button className="w-full xs:w-auto mt-4 py-3 px-20 bg-green-500 font-semibold text-white tracking-wider text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
 							{loading ? t("contact-sending-btn") : t("contact-btn")}
 						</button>
 					</form>
 				</div>
 
-				<div className="text-white w-[500px] pr-10">
-					<p className="text-[17px]">{t("contact-p2")}</p>
+				<div className="text-white md:w-[500px] md:pr-10">
+					<p className="md:text-[17px]">{t("contact-p2")}</p>
 
 					<div>
 						<iframe
-							className="my-4 w-full h-[32vh] rounded-md"
+							className="my-4 w-full h-[32vh] mt-6 rounded-md"
 							src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d11984.772071838523!2d69.26513!3d41.326416!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE5JzM1LjEiTiA2OcKwMTUnNTQuNSJF!5e0!3m2!1sru!2sus!4v1722885376047!5m2!1sru!2sus"
 						></iframe>
 					</div>
 
-					<div className="flex flex-col gap-y-4">
+					<div className="flex flex-col gap-y-4 mt-6 md:mt-0">
 						<a
 							href="https://www.google.com/maps"
 							target="blank"

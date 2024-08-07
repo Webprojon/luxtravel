@@ -36,29 +36,32 @@ export default function FaqPage() {
 	return (
 		<section
 			id="faq"
-			className="mt-20 scroll-mt-24 lg:scroll-mt-40 lg:max-w-[1250px] mx-auto"
+			className="mt-10 px-2 md:mt-20 scroll-mt-24 lg:scroll-mt-40 xs:max-w-[460px] sm:max-w-[760px] md:max-w-[925px] lg:max-w-[1250px] mx-auto"
 		>
-			<div className="lg:flex justify-between md:mt-8">
-				<h2 className="font-bold text-[32px] text-black/85">{t("faq-h2")}</h2>
-				<div className="flex flex-col gap-y-8">
+			<div className="lg:flex justify-between md:mt-8 mx-auto xs:w-[470px] sm:w-[640px] md:w-[100%]">
+				<h2 className="font-bold text-[20px] text-center xs:text-left xs:text-[28px] md:text-[32px] text-black/85">
+					{t("faq-h2")}
+				</h2>
+				<div className="flex flex-col gap-y-8 mt-6 md:mt-0">
 					{faqs.map(({ id, question, answer }) => (
 						<div key={id} className="lg:w-[900px] lg:pr-5">
 							<div className="border-b">
-								<div className="group flex items-center justify-between pb-2 lg:mb-2">
+								<div className="group flex items-center justify-between gap-x-5 pb-2 lg:mb-2">
 									<h2
 										onClick={() => handleToggle(id)}
-										className="text-sm cursor-pointer font-medium text-black/85 tracking-wide xs:text-[16px] md:text-[20px] lg:text-[23px]"
+										className="text-sm cursor-pointer font-medium text-black/85 tracking-wide xs:text-[16px] sm:text-[20px] lg:text-[23px]"
 									>
 										{question}
 									</h2>
 									<div
 										onClick={() => handleToggle(id)}
-										className="transition-max-height duration-500 ease-in-out flex justify-center items-center p-1 cursor-pointer rounded-full group-hover:text-white group-hover:bg-black/60 xs:p-2"
+										className="transition-max-height duration-500 ease-in-out flex justify-center items-center p-1 cursor-pointer rounded-full
+										 group-hover:text-white group-hover:bg-black/60 xs:p-1 sm:p-2"
 									>
 										{toggle === id ? (
-											<IoMdClose className="size-7" />
+											<IoMdClose className="size-5 xs:size-7" />
 										) : (
-											<FiPlus className="size-7" />
+											<FiPlus className="size-5 xs:size-7" />
 										)}
 									</div>
 								</div>
@@ -66,7 +69,7 @@ export default function FaqPage() {
 									className={`overflow-hidden transition-max-height duration-500 ease-in-out 
 										${toggle === id ? "max-h-screen" : "max-h-0"}`}
 								>
-									<p className="text-sm text-black/85 pb-4 tracking-wider xs:text-md md:text-lg">
+									<p className="text-sm text-black/85 pb-4 tracking-wider xs:text-md sm:text-lg">
 										{answer}
 									</p>
 								</div>

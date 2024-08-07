@@ -24,19 +24,22 @@ export default function Networks() {
 				</div>
 
 				<div className="flex justify-center items-center w-[3.1rem] h-[3.1rem] rounded-full bg-red-400">
-					<a href="https://www.instagram.com" target="blank">
+					<a
+						href="https://www.instagram.com/latifov_izzat?igsh=MTh6d3I3M2V1cnFmYg=="
+						target="blank"
+					>
 						<FaInstagram className="size-7 text-white" />
 					</a>
 				</div>
 
 				<div className="flex justify-center items-center w-[3.1rem] h-[3.1rem] rounded-full bg-green-500">
-					<a href="https://www.instagram.com" target="blank">
+					<a href="https://www.whatsapp.com" target="blank">
 						<FaWhatsapp className="size-7 text-white" />
 					</a>
 				</div>
 
 				<div className="flex justify-center items-center w-[3.1rem] h-[3.1rem] rounded-full bg-blue-500">
-					<a href="https://t.me" target="blank">
+					<a href="https://t.me/izzatbek_digital" target="blank">
 						<FaTelegramPlane className="size-6 text-white" />
 					</a>
 				</div>

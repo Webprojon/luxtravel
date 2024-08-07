@@ -41,7 +41,7 @@ export default function Header() {
 				${isScrolled ? "bg-black z-[999]" : "bg-transparent"}  fixed left-0 right-0`}
 		>
 			<div className="mx-auto lg:max-w-[1250px]">
-				<nav className="flex justify-between items-center">
+				<nav className="flex justify-between items-center h-[11vh] md:h-auto">
 					<a href="#main">
 						<img
 							src={headerLogo}

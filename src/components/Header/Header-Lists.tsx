@@ -8,8 +8,16 @@ export default function HeaderLists() {
 	const [title, setTitle] = useState("Dam olish maskanlari");
 	const { t } = useTranslation();
 
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+		});
+	};
+
 	const handleToggle = () => {
 		setIsToggle(!isToggle);
+
+		scrollToTop();
 	};
 
 	const destinations = [
