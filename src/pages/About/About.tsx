@@ -1,5 +1,4 @@
 import tashkentVideo from "../../assets/videos/tashkent-video.mp4";
-import tashkent from "../../assets/Images/places/tashkent.jpg";
 import clietOne from "../../assets/Images/clients-imgs/telegram-cloud-document-2-5188232451033420711 1.png";
 import clietTwo from "../../assets/Images/clients-imgs/telegram-cloud-document-2-5188232451033420721 1.png";
 import clietThree from "../../assets/Images/clients-imgs/telegram-cloud-document-2-5188232451033420721 2.png";
@@ -46,7 +45,7 @@ export default function About() {
 					muted
 					controls
 					preload="auto"
-					poster={tashkent}
+					poster="https://voicesoncentralasia.org/wp-content/uploads/2018/06/city21.jpg"
 					src={tashkentVideo}
 					className="h-[60vh] mx-auto mt-12"
 				></video>

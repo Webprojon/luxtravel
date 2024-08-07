@@ -1,7 +1,4 @@
 import { useEffect, useState } from "react";
-import enFlag from "../../assets/Images/flags/enFlag.png";
-import ruFlag from "../../assets/Images/flags/ruFlag.png";
-import uzFlag from "../../assets/Images/flags/uzFlag.png";
 import { useGlobalContext } from "../../context/global-context";
 import { useTranslation } from "react-i18next";
 
@@ -35,22 +32,22 @@ export default function HeaderLang() {
 			className="flex justify-center gap-x-8 cursor-pointer"
 		>
 			<img
-				src={uzFlag}
+				src="https://vectorflags.s3.amazonaws.com/flags/uz-circle-01.png"
 				alt="Uzbekistan flag"
 				onClick={() => handleClick("uz")}
-				className="w-10 hover:scale-105 transition-all shadow-lg rounded-full"
+				className="w-10 hover:scale-105 transition-all custom-shadow rounded-full"
 			/>
 			<img
-				src={ruFlag}
+				src="https://vectorflags.s3.amazonaws.com/flags/ru-circle-01.png"
 				alt="Russian flag"
 				onClick={() => handleClick("ru")}
-				className="w-10 hover:scale-105 transition-all shadow-lg rounded-full"
+				className="w-10 hover:scale-105 transition-all custom-shadow rounded-full"
 			/>
 			<img
-				src={enFlag}
+				src="https://static.vecteezy.com/system/resources/thumbnails/007/910/760/small_2x/united-kingdom-flag-rounded-icon-uk-flag-union-jack-vector.jpg"
 				alt="English flag"
 				onClick={() => handleClick("en")}
-				className="w-10 hover:scale-105 transition-all shadow-lg rounded-full"
+				className="w-10 hover:scale-105 transition-all custom-shadow rounded-full"
 			/>
 		</div>
 	);

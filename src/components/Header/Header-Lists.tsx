@@ -45,7 +45,7 @@ export default function HeaderLists() {
 		},
 		{
 			path: "/turkiston",
-			src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS1SEnMK1TD10F6J9PHINSQ3laGipupc-big&s",
+			src: "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/03/05/97898.jpg",
 			alt: "imgs",
 			name: t("link6"),
 		},

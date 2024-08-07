@@ -1,9 +1,5 @@
 import { MdOutlineDateRange } from "react-icons/md";
 import stars from "../../assets/Images/generals/Group 1000001721.png";
-import cardOne from "../../assets/Images/generals/Rectangle 19305 (1).png";
-import cardTwo from "../../assets/Images/generals/Rectangle 19305 (2).png";
-import cardThree from "../../assets/Images/generals/Rectangle 19305 (3).png";
-import cardFour from "../../assets/Images/generals/Rectangle 19305.png";
 import { FaRegUser } from "react-icons/fa";
 import { GrLocation } from "react-icons/gr";
 import { useLocation } from "react-router-dom";
@@ -17,7 +13,8 @@ export default function Places() {
 	const cardData = {
 		fourCards: [
 			{
-				imgSrc: cardFour,
+				imgSrc:
+					"https://tooroom.pro/uploads/hotel/2023/04/23/sherwood-exclusive-kemer-general-view-01-1682256614.jpg",
 				icon: "",
 				icon2: "",
 				duration: "",
@@ -30,21 +27,24 @@ export default function Places() {
 				btn: t("placecard1.btn"),
 			},
 			{
-				imgSrc: cardOne,
+				imgSrc:
+					"https://cf.bstatic.com/xdata/images/hotel/max1024x768/548338603.jpg?k=c65862ff30a227114eca7e930ba6a7ee683b8af9bc83c9b0fa35c98f8472c937&o=&hp=1",
 				title: t("placecard2.title"),
 				location: t("placecard1.location"),
 				description: t("placecard2.description"),
 				btn: t("placecard1.btn"),
 			},
 			{
-				imgSrc: cardTwo,
+				imgSrc:
+					"https://avatars.mds.yandex.net/get-altay/4381564/2a00000181edddb6b7ec3cd8d70f305b6d30/L_height",
 				title: t("placecard3.title"),
 				location: t("placecard1.location"),
 				description: t("placecard3.description"),
 				btn: t("placecard1.btn"),
 			},
 			{
-				imgSrc: cardThree,
+				imgSrc:
+					"https://www.manadosafaris.com/wp/wp-content/uploads/2016/09/Oasis01.jpg",
 				title: t("placecard4.title"),
 				location: t("placecard1.location"),
 				description: t("placecard4.description"),
@@ -111,7 +111,11 @@ export default function Places() {
 					{(pathname ? cardData.fourCards : cardData.threeCards).map(
 						(card, index) => (
 							<div key={index} className="w-[390px] rounded-[10px]">
-								<img src={card.imgSrc} alt="imgs" className="w-full" />
+								<img
+									src={card.imgSrc}
+									alt="imgs"
+									className="h-[40vh] w-full rounded-[20px]"
+								/>
 								<div>
 									<div className="flex justify-between font-medium mt-2 text-black/70">
 										<span className="flex items-center text-[20px]">
