@@ -1,28 +1,54 @@
-import buxoro from "../../assets/Images/places/buxoro.png";
-import samarqand from "../../assets/Images/places/samarqand.png";
-import turkiston from "../../assets/Images/places/turkiston.png";
-import tashkent from "../../assets/Images/places/tashkent.jpg";
-import villa from "../../assets/Images/places/villa.png";
-import zomin from "../../assets/Images/places/zomin.png";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../context/global-context";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function HeaderLists() {
 	const { isToggle, setIsToggle } = useGlobalContext();
 	const [title, setTitle] = useState("Dam olish maskanlari");
+	const { t } = useTranslation();
 
 	const handleToggle = () => {
 		setIsToggle(!isToggle);
 	};
 
 	const destinations = [
-		{ path: "/", src: villa, alt: "imgs", name: "Dam olish maskanlari" },
-		{ path: "/buxoro", src: buxoro, alt: "imgs", name: "Buxoro" },
-		{ path: "/samarkand", src: samarqand, alt: "imgs", name: "Samarqand" },
-		{ path: "/tashkent", src: tashkent, alt: "imgs", name: "Tasheknt" },
-		{ path: "/zomin", src: zomin, alt: "imgs", name: "Zomin" },
-		{ path: "/turkiston", src: turkiston, alt: "imgs", name: "Turkiston" },
+		{
+			path: "/",
+			src: "https://cdn-img.readytotrip.com/t/1024x768/extranet/ec/1f/ec1f630af64aee959047f84a153451bd1797dd98.JPEG",
+			alt: "imgs",
+			name: t("link1"),
+		},
+		{
+			path: "/buxoro",
+			src: "https://mediaim.expedia.com/destination/1/0fa07e58724840de3c528174f4eb921a.jpg",
+			alt: "imgs",
+			name: t("link2"),
+		},
+		{
+			path: "/samarkand",
+			src: "https://www.unchartedbackpacker.com/wp-content/uploads/2016/07/DSC_0124.jpg",
+			alt: "imgs",
+			name: t("link3"),
+		},
+		{
+			path: "/tashkent",
+			src: "https://voicesoncentralasia.org/wp-content/uploads/2018/06/city21.jpg",
+			alt: "imgs",
+			name: t("link4"),
+		},
+		{
+			path: "/zomin",
+			src: "https://static.review.uz/crop/9/0/1400__100_902470340.jpg?v=1606807243",
+			alt: "imgs",
+			name: t("link5"),
+		},
+		{
+			path: "/turkiston",
+			src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS1SEnMK1TD10F6J9PHINSQ3laGipupc-big&s",
+			alt: "imgs",
+			name: t("link6"),
+		},
 	];
 
 	useEffect(() => {

@@ -1,0 +1,319 @@
+{
+	"link1": "Resorts",
+	"link2": "Bukhara",
+	"link3": "Samarkand",
+	"link4": "Tashkent",
+	"link5": "Zomin",
+	"link6": "Turkestan",
+
+	"home-h1": "LUX TRAVEL discover unforgettable moments",
+	"home-h1-br": "with us!",
+	"home-p": "Register for a free consultation",
+	"home-btn": "Free consultation",
+	"home-btn2": "Ready tour packages",
+	"card1": {
+		"title": "Experience",
+		"description": "Team with over 5 years of experience"
+	},
+	"card2": {
+		"title": "Affordable prices",
+		"description": "Affordable prices for overall travel expenses"
+	},
+	"card3": {
+		"title": "Wide selection",
+		"description": "Tours in Uzbekistan and neighboring countries"
+	},
+
+	"about-h1": "Learn more about us through the following video",
+	"about-h2": "more than clients are satisfied with our services",
+	"about-p": "Examples of photos of our satisfied clients",
+	"img-text": "Your photo could be here",
+
+	"whyus-h2": "Why choose us?",
+	"whyus-p": "8 reasons to choose us",
+	"whyus-card1": {
+		"title": "Experience",
+		"description": "Team with over 5 years of experience"
+	},
+	"whyus-card2": {
+		"title": "Tourism sector",
+		"description": "We provide quality services and help with the selection"
+	},
+	"whyus-card3": {
+		"title": "Wide selection",
+		"description": "More than 10 resorts and travel destinations"
+	},
+	"whyus-card4": {
+		"title": "Affordable prices",
+		"description": "Affordable prices for quality services"
+	},
+	"whyus-card5": {
+		"title": "Safety",
+		"description": "We guarantee the safety of your trip"
+	},
+	"whyus-card6": {
+		"title": "Trust",
+		"description": "More than 2000 clients trust us"
+	},
+	"whyus-card7": {
+		"title": "Unified group",
+		"description": "Content collected during the trip in one group"
+	},
+	"whyus-card8": {
+		"title": "High quality",
+		"description": "Comfortable cars during your trip"
+	},
+
+	"service-h2": "What will be included in your 2-day trip?",
+	"service-p": "Find out what will happen during your trip",
+	"service-btn": "Learn more",
+	"service-cost": "Price",
+	"service-bron-btn": "Book a spot",
+	"service-limited-place": "Limited spots available!",
+	"servicecard1": {
+		"title": "Gathering of Travelers",
+		"description": "The bus departs on the Tashkent-Bukhara route"
+	},
+	"servicecard2": {
+		"title": "Breakfast in Bukhara",
+		"description": "The visit to the 7 holy places in the Bukhara region begins. 1. Sheikh Abdullah Abdul Khalik Gijduvani,"
+	},
+	"servicecard3": {
+		"title": "Breakfast in the Hotel",
+		"description": "The tour begins from the Labi Hauz ensemble in the following order: Nadir Devonbegi Madrasah.."
+	},
+	"servicecard4": {
+		"countOfPeople": "number of spots: 50"
+	},
+	"servicecard5": {
+		"one": "Breakfast",
+		"two": "Overnight stay in the hotel",
+		"three": "Transport services",
+		"four": "Visit to the tropical garden",
+		"five": "Visits and excursions",
+		"six": "Guide services"
+	},
+	"servicecard6": {
+		"one": "Lunch",
+		"two": "Dinner and musical entertainment",
+		"three": "Visit to the Sitorai Mohi-Xosa palace",
+		"four": "Visit to the Amir reception and the Flora Fauna Museum",
+		"five": "Visit to a souvenir shop for shopping",
+		"six": "Visit to the Amir's prison and other historical places"
+	},
+	"servicecard7": {
+		"title": "Gathering of Travelers",
+		"description": "The Afrosiab train departs on the Tashkent-Samarkand route"
+	},
+	"servicecard8": {
+		"title": "Breakfast in Samarkand",
+		"description": "Breakfast buffet in the hotel. Tourists board the bus and the excursion begins."
+	},
+	"servicecard9": {
+		"title": "Tour",
+		"description": "Visit to the Shahi-Zinda ensemble. Here they will visit the graves of ancient rulers, Timurids, and the Prophet Muhammad's s.a.v. cousin Qusam ibn Abbas r.a."
+	},
+	"servicecard10": {
+		"countOfPeople": "number of spots: 50"
+	},
+	"servicecard11": {
+		"one": "Breakfast",
+		"two": "Transport services",
+		"three": "Overnight stay in the hotel",
+		"four": "Tour of the Registan ensemble",
+		"five": "Visit to the Gur-Emir complex",
+		"six": "Guide services"
+	},
+	"servicecard12": {
+		"one": "Visit to the Shahi-Zinda ensemble",
+		"two": "Visit to the Khoja Doniyor site",
+		"three": "Visit to the Amir Temur Mosque (Bibi-Khanym)",
+		"four": "Visit to the Mirzo Ulugh Beg Observatory and Museum",
+		"five": "Visit to the Hazrati Khizr Mosque and I. Karimov's mausoleum",
+		"six": "Tour of the Amir's prison and other historical places"
+	},
+	"servicecard13": {
+		"title": "Gathering of Travelers",
+		"description": "The bus departs on the Tashkent route"
+	},
+	"servicecard14": {
+		"title": "Breakfast",
+		"description": "Group breakfast in Tashkent"
+	},
+	"servicecard15": {
+		"title": "Tour",
+		"description": "Tour to the Pobeda Park, opened in honor of the heroes of World War II."
+	},
+	"servicecard16": {
+		"countOfPeople": "number of spots: 9"
+	},
+	"servicecard17": {
+		"one": "Breakfast",
+		"two": "Overnight stay in the hotel",
+		"three": "Visit to the Polytechnic Museum",
+		"four": "Guide services",
+		"five": "Visit to the Hazrati Imam complex",
+		"six": "Transport by train or bus"
+	},
+	"servicecard18": {
+		"one": "Visit to Zangi-Ota",
+		"two": "Walk in the Navruz Park",
+		"three": "Visit to the Pobeda Park",
+		"four": "Visit to the Museum of Timurid History",
+		"five": "Walk and visit the aquarium in Magic City Park",
+		"six": "Visit to Chorsu Bazaar and souvenir shopping"
+	},
+	"servicecard19": {
+		"title": "Gathering of Vacationers",
+		"description": "Departure on the Tashkent-Zomin route"
+	},
+	"servicecard20": {
+		"title": "Walk",
+		"description": "Walk in the Zomin National Nature Park"
+	},
+	"servicecard21": {
+		"title": "Glass Walkway",
+		"description": "Visit to the newly built glass walkway (suspension bridge) via the cable car to the “Suffa 2400” recreation area."
+	},
+	"servicecard22": {
+		"countOfPeople": "per person"
+	},
+	"servicecard23": {
+		"one": "Hotel",
+		"two": "City walks",
+		"three": "Transport services",
+		"four": "First day lunch",
+		"five": "First day dinner",
+		"six": "Walk along the reservoir"
+	},
+	"servicecard24": {
+		"one": "Walk in the Zomin National Nature Park",
+		"two": "Zomin waterfall and Boboyongok view",
+		"three": "Celebration and cultural relaxation with national music",
+		"four": "Table tennis, cinema, and other entertainment programs",
+		"five": "Newly built glass walkway in the “Suffa 2400” recreation area",
+		"six": "Tour of the Amir's prison and other historical places"
+	},
+	"servicecard25": {
+		"title": "Gathering of Travelers",
+		"description": "The bus departs on the Tashkent-Bukhara route"
+	},
+	"servicecard26": {
+		"title": "Entry to Kazakhstan",
+		"description": "Customs inspection at the intergovernmental border checkpoint Jibek Joli (Silk Road) in Kazakhstan (time zone +1)"
+	},
+	"servicecard27": {
+		"title": "Tour",
+		"description": "Visit to the Ibrahim Ata Mausoleum in Sayram (17th century)."
+	},
+	"servicecard28": {
+		"countOfPeople": "number of spots: 50"
+	},
+	"servicecard29": {
+		"one": "Breakfast",
+		"two": "Overnight stay in the hotel",
+		"three": "Transport services",
+		"four": "Visits and excursions",
+		"five": "Guide services",
+		"six": "Departure to the town of Sayram"
+	},
+	"servicecard30": {
+		"one": "Dinner in a cafe",
+		"two": "Visit to the Ibrahim Ata Mausoleum",
+		"three0": "Visit to the Korasok Momo Mausoleum",
+		"four": "Lunch in a cafe in the city of Shymkent",
+		"five": "Tour of the Venice and caravanserai",
+		"six": "Visit to the Arslan Bab Mausoleum in Otrar and dinner in a cafe"
+	},
+
+	"placecard1": {
+		"title": "Sherwood Resort",
+		"location": "Uzbekistan",
+		"description": "An international year-round mountain resort in Uzbekistan that meets modern quality and safety standards!",
+		"btn": "Learn more"
+	},
+	"placecard2": {
+		"title": "Wellmore Resort",
+		"description": "Wellmore Resort Hotel - an ideal place for family vacations at one of the most beautiful spots on the shore of the Charvak Reservoir"
+	},
+	"placecard3": {
+		"title": "Parkent Creative H",
+		"description": "A resort located in the fresh air and in the mountains, with facilities for corporate events and family vacations"
+	},
+	"placecard4": {
+		"title": "Oasis Garden",
+		"description": "Oasis Garden Restaurant - a great place to hold various events: from lunches with friends and romantic dinners to large social receptions and wedding ceremonies"
+	},
+	"placecard5": {
+		"duration": "2 days",
+		"people": "50 people",
+		"title": "Samarkand",
+		"location": "Uzbekistan",
+		"price": "1,074,000 UZS",
+		"description": "2-day tour around Samarkand. Visit the most interesting places in Samarkand. In this tour, you will learn about the history of the ancient city and see architectural monuments. Taste local dishes and experience unforgettable moments",
+		"btn": "Book a spot"
+	},
+	"placecard6": {
+		"duration": "3 days",
+		"people": "50 people",
+		"title": "Bukhara",
+		"price": "1,440,000 UZS",
+		"description": "3-day tour around Bukhara. During the tour, a group of up to 50 people will gather and visit the most famous landmarks of Bukhara. In this tour, you will see historical monuments, get acquainted with local culture, and taste delicious national dishes"
+	},
+	"placecard7": {
+		"duration": "3 days",
+		"people": "20 people",
+		"title": "Khiva",
+		"price": "1,737,000 UZS",
+		"description": "3-day tour around Khiva. Discover the historic city of Ichan-Kala, unforgettable teahouses, and Uzbek national cuisine. Your opportunity to make new friends and explore modern places in Uzbekistan!"
+	},
+	"place-h2": "Our resorts",
+	"place-h2-sub": "Other tour packages",
+	"place-p": "Get acquainted with the resorts offered below",
+	"place-p-sub": "Get acquainted with the tour packages offered below",
+
+	"faq-h2": "Client questions",
+	"faq1": {
+		"question": "What companies are among your clients?",
+		"answer": "More than 200 large companies have used our services. We provide an individual approach and services for each company."
+	},
+	"faq2": {
+		"question": "How many people have used LUX TRAVEL services?",
+		"answer": "To date, more than 5,000 satisfied clients have used our services. Among them are corporate clients and individual travelers."
+	},
+	"faq3": {
+		"question": "What packages do you offer for tours and excursions?",
+		"answer": "We offer various packages for pilgrimage tourism and gastronomic tourism. Our packages are designed to meet the needs and interests of our clients. For more information, please contact us."
+	},
+	"faq4": {
+		"question": "Can I trust your services, are they safe?",
+		"answer": "Yes, you can fully trust our services. We prioritize safety and quality. The safety and satisfaction of our clients are very important to us."
+	},
+
+	"contact-h2": "Contact us",
+	"contact-p": "Do you have a question?",
+	"contact-form-name": "Your name",
+	"contact-form-textarea": "Your question",
+	"contact-agree": "I agree to the terms of the offer",
+	"contact-sending-btn": "Sending",
+	"contact-btn": "Send",
+	"contact-p2": "If you want to get answers to all your questions from our specialists, visit us at the address below or call us",
+	"contact-address": "Tashkent city, Manzil street, 1a",
+
+	"footer-p": "Tour services across Uzbekistan and neighboring countries",
+	"footer-one": "Campaign",
+	"footer-two": "Directions",
+	"footerlink1": "About us",
+	"footerlink2": "Why us?",
+	"footerlink3": "Contact",
+	"footerlink4": "Services",
+	"footerlink5": "Samarkand",
+	"footerlink6": "Bukhara",
+	"footerlink7": "Tashkent",
+	"footerlink8": "Turkestan",
+	"footerlink9": "Zomin",
+	"footerlink10": "Resorts",
+	"footer-p2": "Copyright @Lux Travel",
+
+	"modal-p": "Thank you for leaving your information, our specialists will contact you"
+}

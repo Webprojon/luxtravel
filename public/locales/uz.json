@@ -1,0 +1,319 @@
+{
+	"link1": "Dam olish maskanlari",
+	"link2": "Buxoro",
+	"link3": "Samarqand",
+	"link4": "Tasheknt",
+	"link5": "Zomin",
+	"link6": "Turkiston",
+
+	"home-h1": "LUX TRAVEL unutilmas onlaringizni",
+	"home-h1-br": "biz bilan kashf qiling!",
+	"home-p": "Bepul konsultatsiya uchun ro’yxatdan o’ting",
+	"home-btn": "Bepul konsultatsiya",
+	"home-btn2": "Tayyor tur paketlar",
+	"card1": {
+		"title": "Tajriba",
+		"description": "5 yildan ortiq tajribaga ega jamoa"
+	},
+	"card2": {
+		"title": "Qulay narxlar",
+		"description": "Umumiy sayohat xarajatlari uchun xamyonbop narxlar"
+	},
+	"card3": {
+		"title": "Keng tanlov",
+		"description": "O'zbekiston hamda qo'shni davlatlarga sahohatlar"
+	},
+
+	"about-h1": "Biz haqimizda quyidagi video orqali batafsil bilib oling",
+	"about-h2": "dan ortiq mijozlarimiz bizning xizmatlarimizdan mamnun",
+	"about-p": "Bizga ishonch bildirgan mijozlarimizning suratlaridan namunalar",
+	"img-text": "Bu yerda sizning suratingiz bo'lishi mumkin",
+
+	"whyus-h2": "Nega aynan bizni tanlashingiz kerak?",
+	"whyus-p": "Bizni tanlashingiz uchun 8 ta sabab",
+	"whyus-card1": {
+		"title": "Tajriba",
+		"description": "5 yildan ortiq tajribaga ega jamoa"
+	},
+	"whyus-card2": {
+		"title": "Turizm sektori",
+		"description": "Sifatli xizmat ko'rsatish va tanlovda yordam beramiz"
+	},
+	"whyus-card3": {
+		"title": "Keng tanlov",
+		"description": "10 dan ziyod dam olish va sayohat maskanlari"
+	},
+	"whyus-card4": {
+		"title": "Qulay narxlar",
+		"description": "Sifatli xizmat ko'rsatish evaziga hamyonbop narxlar"
+	},
+	"whyus-card5": {
+		"title": "Xavfsizlik",
+		"description": "Sayohatingzi xavfsiz bo'lishiga kafolat beramiz"
+	},
+	"whyus-card6": {
+		"title": "Ishonch",
+		"description": "Bizga 2000 dan ortiq mijozlar ishonch bildirgan"
+	},
+	"whyus-card7": {
+		"title": "Umumiy guruh",
+		"description": "Safar davomida yeg'ilgan kontentlar bitta guruhda"
+	},
+	"whyus-card8": {
+		"title": "Yuqori sifat",
+		"description": "Sayohatingiz davomida komfort mashinalar"
+	},
+
+	"service-h2": "2 kunlik sayohatingizda nimalar bo’ladi?",
+	"service-p": "Safaringiz davomida nimalar bo’lishini bilib oling",
+	"service-btn": "Ko'proq ma'lumot olish",
+	"service-cost": "Narxi",
+	"service-bron-btn": "Joyni band qilish",
+	"service-limited-place": "Joylar soni cheklangan !",
+	"servicecard1": {
+		"title": "Sayoxatchilar yig‘ini",
+		"description": "Avtobus Toshkent-Buxoro yo‘nalishida yo‘lga chiqiladi"
+	},
+	"servicecard2": {
+		"title": "Buxoro shaxrida nonushta",
+		"description": "Buxoro viloyatidagi 7 pir ziyorati boshlanadi. 1. Shayx Abdulla AbduAl Xoliq G‘ijduvoni,"
+	},
+	"servicecard3": {
+		"title": "Mexmonxonada nonushta",
+		"description": "Labi xovuz ansamblidan quyida ketma ketlikda sayoxat boshlanadi: Nodir devonbegi madrasasi.."
+	},
+	"servicecard4": {
+		"countOfPeople": "joylar soni: 50 ta"
+	},
+	"servicecard5": {
+		"one": "Nonushta",
+		"two": "Mehmonxonada tunash",
+		"three": "Transport xizmatlari",
+		"four": "Tropik bog'ga tashrif",
+		"five": "Ziyorat va ekskursiyalar",
+		"six": "Yo'lboshchi (gid) xizmatlari"
+	},
+	"servicecard6": {
+		"one": "Tushlik",
+		"two": "Kechki ovqat va musiqiy xordiq",
+		"three": "Sitorai Molhi-Xossa saroyiga tashrif",
+		"four": "Amir qabulxonasi, Flora founa muzeyi tashrif",
+		"five": "Esdalik sovg'alar xaridi uchun do'konga tashrif",
+		"six": "Amirlik zindoni va boshqa tarixiy manzillarga tashrif"
+	},
+	"servicecard7": {
+		"title": "Sayoxatchilar yig‘ini",
+		"description": "Toshkentdan Afrosiyob poezdi Toshkent-Samarqand yo‘nalishida yo‘lga chiqadi"
+	},
+	"servicecard8": {
+		"title": "Samarqand shaxrida nonushta",
+		"description": "Mehmonxonada shvedcha usulda nonushta. Sayohatchilar avtobusga chiqishadi va ekskursiya boshlanadi."
+	},
+	"servicecard9": {
+		"title": "Sayohat",
+		"description": "Shahizinda ansambliga tashrif. U yerda qadimiy hukmdorlar, temuriylar va Payg'ambarimiz s.a.v.ning jiyanlari Qusam ibn Abbos rozio'llohu anhoning qabrlarini ziyorat qilinadi."
+	},
+	"servicecard10": {
+		"countOfPeople": "joylar soni: 50 ta"
+	},
+	"servicecard11": {
+		"one": "Nonushta",
+		"two": "Transport xizmatlari",
+		"three": "Mehmonxonada tunash",
+		"four": "Registon ansambliga sayohat",
+		"five": "Guri-Amir majmuasiga tashrif",
+		"six": "Yo'lboshchi (gid) xizmatlari"
+	},
+	"servicecard12": {
+		"one": "Shohizinda ansambliga tashrif",
+		"two": "Xoja Doniyor qadamjosiga tashrif",
+		"three": "Amir Temur masjidi (Bibixonim)ga tashrif",
+		"four": "Mirzo Ulug‘bek observatoriyasi va muzeyiga tashrif",
+		"five": "Hazrati Xizr masjidi va I. Karimov maqbarasiga ziyorat",
+		"six": "Amirlik zindoni va boshqa tarixiy manzillarni tomosha qilish"
+	},
+	"servicecard13": {
+		"title": "Sayoxatchilar yig‘ini",
+		"description": "Avtobus Toshkent yo‘nalishida yo‘lga chiqiladi"
+	},
+	"servicecard14": {
+		"title": "Nonushta",
+		"description": "Toshkent shahrida jamoaviy nonushta"
+	},
+	"servicecard15": {
+		"title": "Sayohat",
+		"description": "Ikkinchi Jahon Urushi qahramonlari sharafiga ochilgan Pobeda bog'iga sayohat."
+	},
+	"servicecard16": {
+		"countOfPeople": "joylar soni: 9 ta"
+	},
+	"servicecard17": {
+		"one": "Nonushta",
+		"two": "Mehmonxonada tunash",
+		"three": "Politechnik muzeyiga tashrif",
+		"four": "Yo'lboshchi (gid) xizmatlari",
+		"five": "Hazrati Imom majmuasiga tashrif",
+		"six": "Poezd yoki avtobus orqali transport"
+	},
+	"servicecard18": {
+		"one": "Zangi-ota ziyorati",
+		"two": "Navruz parkida sayr",
+		"three": "Pobeda parkiga tashrif",
+		"four": "Timuriylar tarix muzeyiga tashrif",
+		"five": "Magic City parkida sayr va akvariumga tashrif",
+		"six": "Chorsu bozoriga tashrif va esdalik sovg‘alar xaridi"
+	},
+	"servicecard19": {
+		"title": "Dam oluvchilar yig‘ini",
+		"description": "Toshkentdan Zomin yo‘nalishida yo‘lga chiqish."
+	},
+	"servicecard20": {
+		"title": "Sayr",
+		"description": "Zomin milliy tabiat bog‘i bo‘ylab sayr"
+	},
+	"servicecard21": {
+		"title": "Oyna yo'lak",
+		"description": "Osma dor yo‘li (kanatka) orqali yangi qurib bitkazilgan oynali yo‘lak (osma ko‘prik) “Suffa 2400” dam olish maskaniga tashrif."
+	},
+	"servicecard22": {
+		"countOfPeople": "kishi boshiga"
+	},
+	"servicecard23": {
+		"one": "Mehmonxona",
+		"two": "Shahar sayrlari",
+		"three": "Transport xizmatlari",
+		"four": "Birinchi kun tushlik",
+		"five": "Birinchi kun kechki ovqat",
+		"six": "Suv ombori bo‘ylab sayohat"
+	},
+	"servicecard24": {
+		"one": "Zomin milliy tabiat bog‘i” bo‘ylab sayr",
+		"two": "Zomin sharsharasi va Boboyong‘oq manzarasi",
+		"three": "Milliy musiqalar ostida bayram, madaniy hordiq",
+		"four": "Stol tennisi, kino va boshqa ko‘ngilochar dasturlar",
+		"five": "“Suffa 2400” maskanidagi yangi qurilgan oynali yo‘lak",
+		"six": "Amirlik zindoni va boshqa tarixiy manzillarni tomosha qilish"
+	},
+	"servicecard25": {
+		"title": "Sayoxatchilar yig‘ini",
+		"description": "Avtobus Toshkent-Buxoro yo‘nalishida yo‘lga chiqiladi"
+	},
+	"servicecard26": {
+		"title": "Qozog'istonga kirib kelish",
+		"description": "Qozog'iston Respublikasi Jibek joli (Ipak yo'li) davlatlararo chegara o'tkazish postida bojxona tekshiruvi (vaqt zonasi +1)"
+	},
+	"servicecard27": {
+		"title": "Sayohat",
+		"description": "Sayramda joylashgan Ibrohim ota maqbarasiga (XVII asr) tashrif."
+	},
+	"servicecard28": {
+		"countOfPeople": "joylar soni: 50 ta"
+	},
+	"servicecard29": {
+		"one": "Nonushta",
+		"two": "Mehmonxonada tunash",
+		"three": "Transport xizmatlari",
+		"four": "Ziyorat va ekskursiyalar",
+		"five": "Yo'lboshchi (gid) xizmatlari",
+		"six": "Sayram shaharchasiga yo'l olish"
+	},
+	"servicecard30": {
+		"one": "Kafeda kechki ovqat",
+		"two": "Ibrahim ota maqbarasi ziyorati",
+		"three0": "Qorasoq momo maqbarasi ziyorati",
+		"four": "Chimkent shahrida kafeda tushlik",
+		"five": "Vinetsiya shaharchasi va Karvon saroyida sayohat",
+		"six": "Otror dagi Arslon bab maqbarasi ziyorati Kafeda kechki ovqat"
+	},
+
+	"placecard1": {
+		"title": "Sherwood Resort",
+		"location": "O'zbekiston",
+		"description": "O'zbekistondagi zamonaviy sifat va xavfsizlik standartlariga javob beradigan butun yil davomida ishlaydigan xalqaro darajadagi tog'li kurort!",
+		"btn": "Ko'proq ma'lumot olish"
+	},
+	"placecard2": {
+		"title": "Wellmore Resort",
+		"description": "Wellmore Resort Hotel-Charvak mehmonxona majmuasi Chorvoq suv ombori sohilidagi eng go'zal joylardan birida oilaviy dam olish uchun ideal manzil"
+	},
+	"placecard3": {
+		"title": "Parkent ijod uyi",
+		"description": "Toza havo va tog‘lar bag‘irda joylashgan dam olish maskani Korporativ tadbirlar va oila davrida dam olish uchun barcha sharoitlar mavjud"
+	},
+	"placecard4": {
+		"title": "Oasis Garden",
+		"description": "Oasis Garden restorani - turli tadbirlarni o'tkazish uchun ajoyib joy: do'stlar bilan tushlik va romantik kechki ovqatlardan tortib, katta ijtimoiy qabul va to'y marosimlarigacha"
+	},
+	"placecard5": {
+		"duration": "2 kun",
+		"people": "50 ta odam",
+		"title": "Samarqand",
+		"location": "O'zbekiston",
+		"price": "1 074 000 so'm",
+		"description": "Samarqand bo'ylab 2 kunlik sayohat. Samarqandning eng qiziqarli joylariga tashrif buyuriladi. Ushbu sayohatda siz qadimiy shahar tarixi bilan tanishib, me'morchilik asarlarini ko'rasiz. Mahalliy taomlar tatib ko'ring va unutilmas lahzalarni boshdan kechiring",
+		"btn": "Joyni band qilish"
+	},
+	"placecard6": {
+		"duration": "3 kun",
+		"people": "50 ta odam",
+		"title": "Buxoro",
+		"price": "1 440 000 so'm",
+		"description": "Buxoro bo'ylab 3 kunlik sayohat. Sayohat davomida 50 kishigacha jamoa yig'iladi va Buxoroning eng mashxur obidalariga sayohat qilinadi. Bu sayohatda siz tarixiy yodgorliklarni ko'rasiz, mahalliy madaniyat bilan yaqindan tanishasiz va mazali milliy taomlarni ko'rasiz"
+	},
+	"placecard7": {
+		"duration": "3 kun",
+		"people": "20 ta odam",
+		"title": "Xiva",
+		"price": "1 737 000 so'm",
+		"description": "Xiva bo'ylab 3 kunlik sayohat. Tarixiy Ichan-Qala shahri, unutilmas choyxonalar va o'zbek milliy taomlari bilan tanishing. Yangi do'stlar topish va O'zbekistonning zamonaviy joylarini kashf etish imkoniyati!"
+	},
+	"place-h2": "Dam olish maskanlarimiz",
+	"place-h2-sub": "Yana boshqa tur paketlar",
+	"place-p": "Quyida taklif qilingan dam olish maskanlari bilan tanishib chiqing",
+	"place-p-sub": "Quyidagi tur paketlar bilan tanishib chiqing",
+
+	"faq-h2": "Mijozlar tomonidan berildagian savollar",
+	"faq1": {
+		"question": "Sizning mijozlaringiz orasida qanday kompaniyalar bor?",
+		"answer": "Xizmatimizdan 200dan ortiq yirik kompaniya foydalangan. Har bir kompaniya uchun alohida yondashuv va xizmatlar taqdim etamiz."
+	},
+	"faq2": {
+		"question": "LUX TRAVEL xizmatlaridan qancha odamlar foydalangan?",
+		"answer": "Bugungi kunga qadar bizning xizmatlarimizdan 5 000 dan ortiq mamnun mijozlar foydalangan. Ular orasida korporativ mijozlar ham, individual sayohatchilar ham bor."
+	},
+	"faq3": {
+		"question": "Sayohatlar va ekskursiyalar uchun qanday paketlar taklif etasiz?",
+		"answer": "Biz ziyorat turizmi va gastronomik turizm uchun turli xil paketlar taklif etamiz. Paketlarimiz mijozlarimizning ehtiyojlari va qiziqishlariga mos ravishda ishlab chiqilgan. Batafsil ma'lumot olish uchun biz bilan bog'lanishingiz mumkin."
+	},
+	"faq4": {
+		"question": "Xizmatlaringizga ishonsam bo'ladimi, xavfsizmi?",
+		"answer": "Ha, xizmatlarimizga to'liq ishonishingiz mumkin. Biz xavfsizlik va sifatni birinchi o'ringa qo'yamiz. Mijozlarimizning xavfsizligi va mamnuniyati biz uchun juda muhim."
+	},
+
+	"contact-h2": "Biz bilan bog'laning",
+	"contact-p": "Savolingiz bormi ?",
+	"contact-form-name": "Ismingiz",
+	"contact-form-textarea": "Savolingiz",
+	"contact-agree": "Offerta shartlarga roziman",
+	"contact-sending-btn": "Yuborilmoqda",
+	"contact-btn": "Yuborish",
+	"contact-p2": "Mutaxassislarimizdan barcha savollaringizga javob olmoqchi bo’lsangiz quyidagi manzilga tashrif buyuring yoki bizga qo’ng’iroq qiling",
+	"contact-address": "Toshkent shahar, Manzil ko’chasi 1a",
+
+	"footer-p": "O’zbekiston va qo’shni davlatlar bo’ylab tur xizmatlari",
+	"footer-one": "Kampaniya",
+	"footer-two": "Yo'nalishlar",
+	"footerlink1": "Biz haqimizda",
+	"footerlink2": "Nega biz?",
+	"footerlink3": "Bog'laish",
+	"footerlink4": "Xizmatlar",
+	"footerlink5": "Samarqand",
+	"footerlink6": "Buxoro",
+	"footerlink7": "Tashkent",
+	"footerlink8": "Turkiston",
+	"footerlink9": "Zomin",
+	"footerlink10": "Dam olish maskanlari",
+	"footer-p2": "Copyright @Lux Travel",
+
+	"modal-p": "Ma'lumotlaringizni qoldirganiz uchun rahmat, Siz bilan mutaxassislar bog'lanishadi"
+}

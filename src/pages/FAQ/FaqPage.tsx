@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { FaPlus } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import { FiPlus } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
-import { IoChevronDownOutline } from "react-icons/io5";
 
 export default function FaqPage() {
 	const [toggle, setToggle] = useState<number | null>(null);
+	const { t } = useTranslation();
 
 	const handleToggle = (id: number | null) => {
 		setToggle((prev) => (prev === id ? null : id));
@@ -14,28 +14,23 @@ export default function FaqPage() {
 	const faqs = [
 		{
 			id: 1,
-			question: "Sizning mijozlaringiz orasida qanday kompaniyalar bor?",
-			answer:
-				"Xizmatimizdan 200dan ortiq yirik kompaniya foydalangan. Har bir kompaniya uchun alohida yondashuv va xizmatlar taqdim etamiz.",
+			question: t("faq1.question"),
+			answer: t("faq1.answer"),
 		},
 		{
 			id: 2,
-			question: "LUX TRAVEL xizmatlaridan qancha odamlar foydalangan?",
-			answer:
-				"Bugungi kunga qadar bizning xizmatlarimizdan 5 000 dan ortiq mamnun mijozlar foydalangan. Ular orasida korporativ mijozlar ham, individual sayohatchilar ham bor.",
+			question: t("faq2.question"),
+			answer: t("faq2.answer"),
 		},
 		{
 			id: 3,
-			question:
-				"Sayohatlar va ekskursiyalar uchun qanday paketlar taklif etasiz?",
-			answer:
-				"Biz ziyorat turizmi va gastronomik turizm uchun turli xil paketlar taklif etamiz. Paketlarimiz mijozlarimizning ehtiyojlari va qiziqishlariga mos ravishda ishlab chiqilgan. Batafsil ma'lumot olish uchun biz bilan bog'lanishingiz mumkin.",
+			question: t("faq3.question"),
+			answer: t("faq3.answer"),
 		},
 		{
 			id: 4,
-			question: "Xizmatlaringizga ishonsam bo'ladimi, xavfsizmi?",
-			answer:
-				"Ha, xizmatlarimizga to'liq ishonishingiz mumkin. Biz xavfsizlik va sifatni birinchi o'ringa qo'yamiz. Mijozlarimizning xavfsizligi va mamnuniyati biz uchun juda muhim.",
+			question: t("faq4.question"),
+			answer: t("faq4.answer"),
 		},
 	];
 	return (
@@ -44,9 +39,7 @@ export default function FaqPage() {
 			className="mt-20 scroll-mt-24 lg:scroll-mt-40 lg:max-w-[1250px] mx-auto"
 		>
 			<div className="lg:flex justify-between md:mt-8">
-				<h2 className="font-bold text-[32px] text-black/85">
-					Mijozlar tomonidan berildagian savollar
-				</h2>
+				<h2 className="font-bold text-[32px] text-black/85">{t("faq-h2")}</h2>
 				<div className="flex flex-col gap-y-8">
 					{faqs.map(({ id, question, answer }) => (
 						<div key={id} className="lg:w-[900px] lg:pr-5">

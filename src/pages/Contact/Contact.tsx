@@ -1,14 +1,17 @@
 import axios from "axios";
 import { useState } from "react";
-import toast from "react-hot-toast";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineMail, MdOutlinePhoneInTalk } from "react-icons/md";
+import { useGlobalContext } from "../../context/global-context";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+	const { setIsModal } = useGlobalContext();
 	const [nameValue, setNameValue] = useState("");
 	const [phoneValue, setPhoneValue] = useState("");
 	const [textAreaValue, settextAreaValue] = useState("");
 	const [loading, setLoading] = useState(false);
+	const { t } = useTranslation();
 
 	const SendMessage = (event: React.FormEvent<HTMLFormElement>) => {
 		setLoading(true);
@@ -30,11 +33,9 @@ export default function Contact() {
 				setNameValue("");
 				setPhoneValue("");
 				settextAreaValue("");
-				toast.success("Successfully Sent!");
 			})
 			.catch((error) => {
 				console.log(error);
-				toast.error("Could not sent.");
 			})
 			.finally(() => {
 				setLoading(false);
@@ -44,13 +45,11 @@ export default function Contact() {
 	return (
 		<section id="contact" className="mt-20 scroll-mt-28">
 			<h2 className="mb-10 text-center text-[30px] text-black/85 font-bold">
-				Biz bilan bog'laning
+				{t("contact-h2")}
 			</h2>
 			<div className="bg-black/85 rounded-[15px] py-10 flex justify-evenly mx-auto lg:max-w-[1250px]">
 				<div className="w-[500px] text-white pl-10 pr-20">
-					<h2 className="font-bold text-[28px] leading-none">
-						Savolingiz bormi ?
-					</h2>
+					<p className="font-bold text-[28px] leading-none">{t("contact-p")}</p>
 					<form
 						onSubmit={SendMessage}
 						className="flex items-start gap-y-6 flex-col mt-12"
@@ -59,7 +58,7 @@ export default function Contact() {
 							required
 							type="text"
 							value={nameValue}
-							placeholder="Ismingiz"
+							placeholder={t("contact-form-name")}
 							onChange={(e) => setNameValue(e.target.value)}
 							className="bg-transparent border border-gray-600 rounded-md w-full py-2 px-3 placeholder:text-white outline-none"
 						/>
@@ -75,28 +74,27 @@ export default function Contact() {
 							rows={3}
 							required
 							value={textAreaValue}
-							placeholder="Savollaringiz"
+							placeholder={t("contact-form-textarea")}
 							onChange={(e) => settextAreaValue(e.target.value)}
 							className="resize bg-transparent border border-gray-600 rounded-md w-full py-2 px-3 placeholder:text-white outline-none"
 						></textarea>
 
 						<div className="flex items-center gap-x-2">
 							<input type="checkbox" name="checkbox" id="checkbox" required />
-							<label htmlFor="checkbox">Offerta shartlarga roziman</label>
+							<label htmlFor="checkbox">{t("contact-agree")}</label>
 						</div>
 
-						<button className="mt-4 py-3 px-20 bg-green-500 font-semibold text-white tracking-wider text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
-							{loading ? "Yuborilmoqda" : "Yuborish"}
+						<button
+							onClick={() => setIsModal(true)}
+							className="mt-4 py-3 px-20 bg-green-500 font-semibold text-white tracking-wider text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow"
+						>
+							{loading ? t("contact-sending-btn") : t("contact-btn")}
 						</button>
 					</form>
 				</div>
 
 				<div className="text-white w-[500px] pr-10">
-					<p className="text-[17px]">
-						Mutaxassislarimizdan barcha savollaringizga javob olmoqchi
-						bo’lsangiz quyidagi manzilga tashrif buyuring yoki bizga qo’ng’iroq
-						qiling
-					</p>
+					<p className="text-[17px]">{t("contact-p2")}</p>
 
 					<div>
 						<iframe
@@ -112,7 +110,7 @@ export default function Contact() {
 							className="flex items-center gap-x-2"
 						>
 							<FaLocationDot className="size-6" />
-							Toshkent shahar, Manzil ko’chasi 1a
+							{t("contact-address")}
 						</a>
 						<a
 							href="tel:+998-99-123-45-67"

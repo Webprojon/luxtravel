@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { GiCheckMark } from "react-icons/gi";
 import { useLocation } from "react-router-dom";
 
@@ -5,51 +6,50 @@ export default function Services() {
 	const location = useLocation();
 	const pathname1 = location.pathname === "/";
 	const pathname = location.pathname;
+	const { t } = useTranslation();
 
 	const informations = {
 		buxoro: {
 			buxoroData: [
 				{
 					day: "1",
-					title: "Sayoxatchilar yig‘ini",
-					description: "Avtobus Toshkent-Buxoro yo‘nalishida yo‘lga chiqiladi",
+					title: t("servicecard1.title"),
+					description: t("servicecard1.description"),
 				},
 				{
 					day: "2",
-					title: "Buxoro shaxrida nonushta",
-					description:
-						"Buxoro viloyatidagi 7 pir ziyorati boshlanadi. 1. Shayx Abdulla AbduAl Xoliq G‘ijduvoni,",
+					title: t("servicecard2.title"),
+					description: t("servicecard2.description"),
 				},
 				{
 					day: "3",
-					title: "Mexmonxonada nonushta",
-					description:
-						"Labi xovuz ansamblidan quyida ketma ketlikda sayoxat boshlanadi: Nodir devonbegi madrasasi..",
+					title: t("servicecard3.title"),
+					description: t("servicecard3.description"),
 				},
 			],
 
 			buxoroServices: {
 				servicesHead: [
 					{
-						countOfPeople: "joylar soni: 50 ta",
+						countOfPeople: t("servicecard4.countOfPeople"),
 						price: "1.440.000",
 					},
 				],
 				firstColumnServices: [
-					"Nonushta",
-					"Mehmonxonada tunash",
-					"Transport xizmatlari",
-					"Tropik bog'ga tashrif",
-					"Ziyorat va ekskursiyalar",
-					"Yo'lboshchi (gid) xizmatlari",
+					t("servicecard5.one"),
+					t("servicecard5.two"),
+					t("servicecard5.three"),
+					t("servicecard5.four"),
+					t("servicecard5.five"),
+					t("servicecard5.six"),
 				],
 				secondColumnServices: [
-					"Tushlik",
-					"Kechki ovqat va musiqiy xordiq",
-					"Sitorai Molhi-Xossa saroyiga tashrif",
-					"Amir qabulxonasi, Flora founa muzeyi tashrif",
-					"Esdalik sovg'alar xaridi uchun do'konga tashrif",
-					"Amirlik zindoni va boshqa tarixiy manzillarga tashrif",
+					t("servicecard6.one"),
+					t("servicecard6.two"),
+					t("servicecard6.three"),
+					t("servicecard6.four"),
+					t("servicecard6.five"),
+					t("servicecard6.six"),
 				],
 			},
 		},
@@ -57,46 +57,43 @@ export default function Services() {
 			samarkandData: [
 				{
 					day: "1",
-					title: "Sayoxatchilar yig‘ini",
-					description:
-						"Toshkentdan Afrosiyob poezdi Toshkent-Samarqand yo‘nalishida yo‘lga chiqadi",
+					title: t("servicecard7.title"),
+					description: t("servicecard7.description"),
 				},
 				{
 					day: "2",
-					title: "Samarqand shaxrida nonushta",
-					description:
-						"Mehmonxonada shvedcha usulda nonushta. Sayohatchilar avtobusga chiqishadi va ekskursiya boshlanadi.",
+					title: t("servicecard8.title"),
+					description: t("servicecard8.description"),
 				},
 				{
 					day: "3",
-					title: "Sayohat",
-					description:
-						"Shahizinda ansambliga tashrif. U yerda qadimiy hukmdorlar, temuriylar va Payg'ambarimiz s.a.v.ning jiyanlari Qusam ibn Abbos rozio'llohu anhoning qabrlarini ziyorat qilinadi.",
+					title: t("servicecard9.title"),
+					description: t("servicecard9.description"),
 				},
 			],
 
 			samarkandServices: {
 				servicesHead: [
 					{
-						countOfPeople: "joylar soni: 50 ta",
+						countOfPeople: t("servicecard10.countOfPeople"),
 						price: "1 074 000",
 					},
 				],
 				firstColumnServices: [
-					"Nonushta",
-					"Transport xizmatlari",
-					"Mehmonxonada tunash",
-					"Registon ansambliga sayohat",
-					"Guri-Amir majmuasiga tashrif",
-					"Yo'lboshchi (gid) xizmatlari",
+					t("servicecard11.one"),
+					t("servicecard11.two"),
+					t("servicecard11.three"),
+					t("servicecard11.four"),
+					t("servicecard11.five"),
+					t("servicecard11.six"),
 				],
 				secondColumnServices: [
-					"Shohizinda ansambliga tashrif",
-					"Xoja Doniyor qadamjosiga tashrif",
-					"Amir Temur masjidi (Bibixonim)ga tashrif",
-					"Mirzo Ulug‘bek observatoriyasi va muzeyiga tashrif",
-					"Hazrati Xizr masjidi va I. Karimov maqbarasiga ziyorat",
-					"Amirlik zindoni va boshqa tarixiy manzillarni tomosha qilish",
+					t("servicecard12.one"),
+					t("servicecard12.two"),
+					t("servicecard12.three"),
+					t("servicecard12.four"),
+					t("servicecard12.five"),
+					t("servicecard12.six"),
 				],
 			},
 		},
@@ -104,44 +101,43 @@ export default function Services() {
 			tashkentData: [
 				{
 					day: "1",
-					title: "Sayoxatchilar yig‘ini",
-					description: "Avtobus Toshkent yo‘nalishida yo‘lga chiqiladi",
+					title: t("servicecard13.title"),
+					description: t("servicecard13.description"),
 				},
 				{
 					day: "2",
-					title: "Nonushta",
-					description: "Toshkent shahrida jamoaviy nonushta",
+					title: t("servicecard14.title"),
+					description: t("servicecard14.description"),
 				},
 				{
 					day: "3",
-					title: "Sayohat",
-					description:
-						"Ikkinchi Jahon Urushi qahramonlari sharafiga ochilgan Pobeda bog'iga sayohat.",
+					title: t("servicecard15.title"),
+					description: t("servicecard15.description"),
 				},
 			],
 
 			toshkentServices: {
 				servicesHead: [
 					{
-						countOfPeople: "joylar soni: 9 ta",
+						countOfPeople: t("servicecard16.countOfPeople"),
 						price: "2 350 000",
 					},
 				],
 				firstColumnServices: [
-					"Nonushta",
-					"Mehmonxonada tunash",
-					"Politechnik muzeyiga tashrif",
-					"Yo'lboshchi (gid) xizmatlari",
-					"Hazrati Imom majmuasiga tashrif",
-					"Poezd yoki avtobus orqali transport",
+					t("servicecard17.one"),
+					t("servicecard17.two"),
+					t("servicecard17.three"),
+					t("servicecard17.four"),
+					t("servicecard17.five"),
+					t("servicecard17.six"),
 				],
 				secondColumnServices: [
-					"Zangi-ota ziyorati",
-					"Navruz parkida sayr",
-					"Pobeda parkiga tashrif",
-					"Timuriylar tarix muzeyiga tashrif",
-					"Magic City parkida sayr va akvariumga tashrif",
-					"Chorsu bozoriga tashrif va esdalik sovg‘alar xaridi",
+					t("servicecard18.one"),
+					t("servicecard18.two"),
+					t("servicecard18.three"),
+					t("servicecard18.four"),
+					t("servicecard18.five"),
+					t("servicecard18.six"),
 				],
 			},
 		},
@@ -149,44 +145,43 @@ export default function Services() {
 			zominData: [
 				{
 					day: "1",
-					title: "Dam oluvchilar yig‘ini",
-					description: "Toshkentdan Zomin yo‘nalishida yo‘lga chiqish.",
+					title: t("servicecard19.title"),
+					description: t("servicecard19.description"),
 				},
 				{
 					day: "2",
-					title: "Sayr",
-					description: "Zomin milliy tabiat bog‘i bo‘ylab sayr",
+					title: t("servicecard20.title"),
+					description: t("servicecard20.description"),
 				},
 				{
 					day: "3",
-					title: "Oyna yo'lak",
-					description:
-						"Osma dor yo‘li (kanatka) orqali yangi qurib bitkazilgan oynali yo‘lak (osma ko‘prik) “Suffa 2400” dam olish maskaniga tashrif.",
+					title: t("servicecard21.title"),
+					description: t("servicecard21.description"),
 				},
 			],
 
 			zominServices: {
 				servicesHead: [
 					{
-						countOfPeople: "kishi boshiga",
+						countOfPeople: t("servicecard22.countOfPeople"),
 						price: "1 700 000",
 					},
 				],
 				firstColumnServices: [
-					"Mehmonxona",
-					"Shahar sayrlari",
-					"Transport xizmatlari",
-					"Birinchi kun tushlik",
-					"Birinchi kun kechki ovqat",
-					"Suv ombori bo‘ylab sayohat",
+					t("servicecard23.one"),
+					t("servicecard23.two"),
+					t("servicecard23.three"),
+					t("servicecard23.four"),
+					t("servicecard23.five"),
+					t("servicecard23.six"),
 				],
 				secondColumnServices: [
-					"Zomin milliy tabiat bog‘i” bo‘ylab sayr",
-					"Zomin sharsharasi va Boboyong‘oq manzarasi",
-					"Milliy musiqalar ostida bayram, madaniy hordiq",
-					"Stol tennisi, kino va boshqa ko‘ngilochar dasturlar",
-					"“Suffa 2400” maskanidagi yangi qurilgan oynali yo‘lak",
-					"Amirlik zindoni va boshqa tarixiy manzillarni tomosha qilish",
+					t("servicecard24.one"),
+					t("servicecard24.two"),
+					t("servicecard24.three"),
+					t("servicecard24.four"),
+					t("servicecard24.five"),
+					t("servicecard24.six"),
 				],
 			},
 		},
@@ -194,44 +189,43 @@ export default function Services() {
 			turkistonData: [
 				{
 					day: "1",
-					title: "Sayoxatchilar yig‘ini",
-					description: "Avtobus Toshkent-Buxoro yo‘nalishida yo‘lga chiqiladi",
+					title: t("servicecard25.title"),
+					description: t("servicecard25.description"),
 				},
 				{
 					day: "2",
-					title: "Qozog'istonga kirib kelish",
-					description:
-						"Qozog'iston Respublikasi Jibek joli (Ipak yo'li) davlatlararo chegara o'tkazish postida bojxona tekshiruvi (vaqt zonasi +1)",
+					title: t("servicecard26.title"),
+					description: t("servicecard26.description"),
 				},
 				{
 					day: "3",
-					title: "Sayohat",
-					description:
-						"Sayramda joylashgan Ibrohim ota maqbarasiga (XVII asr) tashrif.",
+					title: t("servicecard27.title"),
+					description: t("servicecard27.description"),
 				},
 			],
 
 			turkistonServices: {
 				servicesHead: [
 					{
-						countOfPeople: "joylar soni: 50 ta",
+						countOfPeople: t("servicecard28.countOfPeople"),
 						price: "1 500 000",
 					},
 				],
 				firstColumnServices: [
-					"Nonushta",
-					"Mehmonxonada tunash",
-					"Transport xizmatlari",
-					"Ziyorat va ekskursiyalar",
-					"Yo'lboshchi (gid) xizmatlari",
-					"Sayram shaharchasiga yo'l olish",
+					t("servicecard29.one"),
+					t("servicecard29.two"),
+					t("servicecard29.three"),
+					t("servicecard29.four"),
+					t("servicecard29.five"),
+					t("servicecard29.six"),
 				],
 				secondColumnServices: [
-					"Ibrahim ota maqbarasi ziyorati",
-					"Qorasoq momo maqbarasi ziyorati",
-					"Chimkent shahrida kafeda tushlik",
-					"Vinetsiya shaharchasi va Karvon saroyida sayohat",
-					"Otror dagi Arslon bab maqbarasi ziyorati Kafeda kechki ovqat",
+					t("servicecard30.one"),
+					t("servicecard30.two"),
+					t("servicecard30.three"),
+					t("servicecard30.four"),
+					t("servicecard30.five"),
+					t("servicecard30.six"),
 				],
 			},
 		},
@@ -296,12 +290,8 @@ export default function Services() {
 		>
 			<div className="flex flex-col items-center lg:max-w-[1250px] mx-auto">
 				<div className="text-center tracking-wide text-black/80">
-					<h2 className="text-[30px] font-bold">
-						2 kunlik sayohatingizda nimalar bo’ladi?
-					</h2>
-					<p className="text-[18px] mt-2 font-medium">
-						Safaringiz davomida nimalar bo’lishini bilib oling
-					</p>
+					<h2 className="text-[30px] font-bold">{t("service-h2")}</h2>
+					<p className="text-[18px] mt-2 font-medium">{t("service-p")}</p>
 				</div>
 
 				<div className="flex justify-between w-full mt-12">
@@ -316,12 +306,12 @@ export default function Services() {
 					))}
 				</div>
 				<button className="mt-6 py-3 px-9 bg-green-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
-					Ko'proq ma'lumot olish
+					{t("service-btn")}
 				</button>
 
 				<div className="relative w-full flex justify-between p-12 tracking-wide border-2 border-green-400 rounded-[20px] mt-20">
 					<div className="absolute -top-9 left-[4rem] bg-green-400 text-white px-12 py-[3px] rounded-t-[15px] flex justify-center items-center font-bold text-[20px]">
-						Narxi
+						{t("service-cost")}
 					</div>
 					<div className="absolute top-[1px] left-[5.4rem] shape bg-green-400 w-[100px] h-[80px]"></div>
 
@@ -359,10 +349,10 @@ export default function Services() {
 							</>
 						))}
 						<button className="mt-8 py-3 px-10 bg-green-400 text-white rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
-							Joyni band qilish
+							{t("service-bron-btn")}
 						</button>
 						<p className="font-medium mt-4 text-black/70 text-[17px]">
-							Joylar soni cheklangan !
+							{t("service-limited-place")}
 						</p>
 					</div>
 				</div>

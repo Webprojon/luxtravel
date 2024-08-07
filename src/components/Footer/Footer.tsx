@@ -2,9 +2,11 @@ import { FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import logo from "..//../assets/Images/generals/logo.png";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
 	const [title, setTitle] = useState("Dam olish maskanlari");
+	const { t } = useTranslation();
 
 	const scrollToTop = () => {
 		window.scrollTo({
@@ -27,9 +29,7 @@ export default function Footer() {
 							className="border-2 border-green-500 rounded-full w-[4.5rem]"
 						/>
 					</a>
-					<p className="my-4 text-black/70 font-medium">
-						O’zbekiston va qo’shni davlatlar bo’ylab tur xizmatlari
-					</p>
+					<p className="my-4 text-black/70 font-medium">{t("footer-p")}</p>
 					<div className="flex gap-x-5 text-green-600">
 						<a href="https://www.instagram.com/" target="blank">
 							<FaInstagram className="size-7" />
@@ -44,50 +44,50 @@ export default function Footer() {
 				</div>
 
 				<div className="flex flex-col gap-y-2">
-					<h2 className="font-bold text-[20px]">Kampaniya</h2>
+					<h2 className="font-bold text-[20px]">{t("footer-one")}</h2>
 					<a href="#about" className="text-black/70 font-medium">
-						Biz haqimizda
+						{t("footerlink1")}
 					</a>
 					<a href="#whyus" className="text-black/70 font-medium">
-						Nega biz ?
+						{t("footerlink2")}
 					</a>
 					<a href="#contact" className="text-black/70 font-medium">
-						Bog'laish
+						{t("footerlink3")}
 					</a>
 					<a href="#service" className="text-black/70 font-medium">
-						Xizmatlar
+						{t("footerlink4")}
 					</a>
 				</div>
 
 				<div onClick={scrollToTop} className="flex flex-col gap-y-2">
-					<h2 className="font-bold text-[20px]">Yo'nalishlar</h2>
+					<h2 className="font-bold text-[20px]">{t("footer-two")}</h2>
 					<Link
 						onClick={() => setTitle("Samarkand")}
 						to="/samarkand"
 						className="text-black/70 font-medium"
 					>
-						Samarqand
+						{t("footerlink5")}
 					</Link>
 					<Link
 						onClick={() => setTitle("Buxoro")}
 						to="/buxoro"
 						className="text-black/70 font-medium"
 					>
-						Buxoro
+						{t("footerlink6")}
 					</Link>
 					<Link
 						onClick={() => setTitle("Tashkent")}
 						to="/tashkent"
 						className="text-black/70 font-medium"
 					>
-						Tashkent
+						{t("footerlink7")}
 					</Link>
 					<Link
 						onClick={() => setTitle("Turkiston")}
 						to="/turkiston"
 						className="text-black/70 font-medium"
 					>
-						Turkiston
+						{t("footerlink8")}
 					</Link>
 				</div>
 
@@ -97,21 +97,21 @@ export default function Footer() {
 						to="/zomin"
 						className="text-black/70 font-medium"
 					>
-						Zomin
+						{t("footerlink9")}
 					</Link>
 					<Link
 						onClick={() => setTitle("Dam olish maskanlari")}
 						to="/"
 						className="text-black/70 font-medium"
 					>
-						Dam olish maskanlari
+						{t("footerlink10")}
 					</Link>
 				</div>
 			</div>
 
 			<div className="border-t text-center">
 				<p className="font-medium my-5 tracking-wider text-black/70">
-					Copyright @Lux Travel
+					{t("footer-p2")}
 				</p>
 			</div>
 		</footer>

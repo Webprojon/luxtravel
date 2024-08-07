@@ -1,16 +1,23 @@
+import { useTranslation } from "react-i18next";
+import Modal from "../../components/Modal";
+import { useGlobalContext } from "../../context/global-context";
+
 export default function Home() {
+	const { isModal } = useGlobalContext();
+	const { t } = useTranslation();
+
 	const sections = [
 		{
-			title: "Tajriba",
-			description: "5 yildan ortiq tajribaga ega jamoa",
+			title: t("card1.title"),
+			description: t("card1.description"),
 		},
 		{
-			title: "Qulay narxlar",
-			description: "Umumiy sayohat xarajatlari uchun xamyonbop narxlar",
+			title: t("card2.title"),
+			description: t("card2.description"),
 		},
 		{
-			title: "Keng tanlov",
-			description: "O'zbekiston hamda qo'shni davlatlarga sahohatlar",
+			title: t("card3.title"),
+			description: t("card3.description"),
 		},
 	];
 
@@ -20,11 +27,9 @@ export default function Home() {
 			className="pt-[9rem] mx-auto lg:max-w-[1250px] tracking-wide"
 		>
 			<h1 className="font-bold text-[46px] leading-[3.9rem] text-white">
-				LUX TRAVEL unutilmas onlaringizni <br /> biz bilan kashf qiling!
+				{t("home-h1")} <br /> {t("home-h1-br")}
 			</h1>
-			<p className="text-white text-[18px] font-medium mt-4">
-				Bepul konsultatsiya uchun ro’yxatdan o’ting
-			</p>
+			<p className="text-white text-[18px] font-medium mt-4">{t("home-p")}</p>
 
 			<div className="flex gap-x-7 mt-14">
 				{sections.map((item, i) => (
@@ -47,14 +52,16 @@ export default function Home() {
 					href="#contact"
 					className="py-5 px-9 bg-green-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow"
 				>
-					Bepul konsultatsiya
+					{t("home-btn")}
 				</a>
 				<a href="#turpaket">
 					<button className="py-5 px-9 bg-sky-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
-						Tayyor tur paketlar
+						{t("home-btn2")}
 					</button>
 				</a>
 			</div>
+
+			{isModal ? <Modal /> : null}
 		</section>
 	);
 }

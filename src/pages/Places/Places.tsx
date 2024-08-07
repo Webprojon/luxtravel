@@ -7,10 +7,12 @@ import cardFour from "../../assets/Images/generals/Rectangle 19305.png";
 import { FaRegUser } from "react-icons/fa";
 import { GrLocation } from "react-icons/gr";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Places() {
 	const location = useLocation();
 	const pathname = location.pathname === "/";
+	const { t } = useTranslation();
 
 	const cardData = {
 		fourCards: [
@@ -20,37 +22,33 @@ export default function Places() {
 				icon2: "",
 				duration: "",
 				people: "",
-				title: "Sherwood Resort",
-				location: "O'zbekiston",
+				title: t("placecard1.title"),
+				location: t("placecard1.location"),
 				price: "",
 				oldPrice: "",
-				description:
-					"O'zbekistondagi zamonaviy sifat va xavfsizlik standartlariga javob beradigan butun yil davomida ishlaydigan xalqaro darajadagi tog'li kurort!",
-				btn: "Ko'proq ma'lumot olish",
+				description: t("placecard1.description"),
+				btn: t("placecard1.btn"),
 			},
 			{
 				imgSrc: cardOne,
-				title: "Wellmore Resort",
-				location: "O'zbekiston",
-				description:
-					"Wellmore Resort Hotel-Charvak mehmonxona majmuasi Chorvoq suv ombori sohilidagi eng go'zal joylardan birida oilaviy dam olish uchun ideal manzil",
-				btn: "Ko'proq ma'lumot olish",
+				title: t("placecard2.title"),
+				location: t("placecard1.location"),
+				description: t("placecard2.description"),
+				btn: t("placecard1.btn"),
 			},
 			{
 				imgSrc: cardTwo,
-				title: "Parkent ijod uyi",
-				location: "O'zbekiston",
-				description:
-					"Toza havo va tog‘lar bag‘irda joylashgan dam olish maskani Korporativ tadbirlar va oila davrida dam olish uchun barcha sharoitlar mavjud",
-				btn: "Ko'proq ma'lumot olish",
+				title: t("placecard3.title"),
+				location: t("placecard1.location"),
+				description: t("placecard3.description"),
+				btn: t("placecard1.btn"),
 			},
 			{
 				imgSrc: cardThree,
-				title: "Oasis Garden",
-				location: "O'zbekiston",
-				description:
-					"Oasis Garden restorani - turli tadbirlarni o'tkazish uchun ajoyib joy: do'stlar bilan tushlik va romantik kechki ovqatlardan tortib, katta ijtimoiy qabul va to'y marosimlarigacha",
-				btn: "Ko'proq ma'lumot olish",
+				title: t("placecard4.title"),
+				location: t("placecard1.location"),
+				description: t("placecard4.description"),
+				btn: t("placecard1.btn"),
 			},
 		],
 
@@ -60,42 +58,39 @@ export default function Places() {
 					"https://optim.tildacdn.one/tild3364-6134-4564-b964-386463353339/-/resize/818x/-/format/webp/Rectangle_19305.png",
 				icon: <MdOutlineDateRange className="mr-2" />,
 				icon2: <FaRegUser className="mr-2" />,
-				duration: "2 kun",
-				people: "50 ta odam",
-				title: "Samarqand",
-				location: "O'zbekiston",
-				price: "1 074 000 so'm",
-				description:
-					"Samarqand bo'ylab 2 kunlik sayohat. Samarqandning eng qiziqarli joylariga tashrif buyuriladi. Ushbu sayohatda siz qadimiy shahar tarixi bilan tanishib, me'morchilik asarlarini ko'rasiz. Mahalliy taomlar tatib ko'ring va unutilmas lahzalarni boshdan kechiring",
-				btn: "Joyni band qilish",
+				duration: t("placecard5.duration"),
+				people: t("placecard5.people"),
+				title: t("placecard5.title"),
+				location: t("placecard5.location"),
+				price: t("placecard5.price"),
+				description: t("placecard5.description"),
+				btn: t("placecard5.btn"),
 			},
 			{
 				imgSrc:
 					"https://optim.tildacdn.one/tild3362-3663-4338-b165-663632343737/-/resize/818x/-/format/webp/buxoortur.png",
 				icon: <MdOutlineDateRange className="mr-2" />,
 				icon2: <FaRegUser className="mr-2" />,
-				duration: "3 kun",
-				people: "50 ta odam",
-				title: "Buxoro",
-				location: "O'zbekiston",
-				price: "1 440 000 so'm",
-				description:
-					"Buxoro bo'ylab 3 kunlik sayohat. Sayohat davomida 50 kishigacha jamoa yig'iladi va Buxoroning eng mashxur obidalariga sayohat qilinadi. Bu sayohatda siz tarixiy yodgorliklarni ko'rasiz, mahalliy madaniyat bilan yaqindan tanishasiz va mazali milliy taomlarni ko'rasiz",
-				btn: "Joyni band qilish",
+				duration: t("placecard6.duration"),
+				people: t("placecard6.people"),
+				title: t("placecard6.title"),
+				location: t("placecard5.location"),
+				price: t("placecard6.price"),
+				description: t("placecard6.description"),
+				btn: t("placecard5.btn"),
 			},
 			{
 				imgSrc:
 					"https://optim.tildacdn.one/tild3631-3461-4262-b462-666264353238/-/resize/818x/-/format/webp/xivatur.png",
 				icon: <MdOutlineDateRange className="mr-2" />,
 				icon2: <FaRegUser className="mr-2" />,
-				duration: "3 kun",
-				people: "20 ta odam",
-				title: "Xiva",
-				location: "O'zbekiston",
-				price: "1 737 000 so'm",
-				description:
-					"Xiva bo'ylab 3 kunlik sayohat. Tarixiy Ichan-Qala shahri, unutilmas choyxonalar va o'zbek milliy taomlari bilan tanishing. Yangi do'stlar topish va O'zbekistonning zamonaviy joylarini kashf etish imkoniyati!",
-				btn: "Joyni band qilish",
+				duration: t("placecard7.duration"),
+				people: t("placecard7.people"),
+				title: t("placecard7.title"),
+				location: t("placecard5.location"),
+				price: t("placecard7.price"),
+				description: t("placecard7.description"),
+				btn: t("placecard5.btn"),
 			},
 		],
 	};
@@ -105,12 +100,10 @@ export default function Places() {
 			<div className="lg:max-w-[1250px] mx-auto">
 				<div className="text-center tracking-wide text-black/80">
 					<h2 className="text-[30px] font-bold">
-						{pathname ? "Dam olish maskanlarimiz" : "Yana boshqa tur paketlar"}
+						{pathname ? t("place-h2") : t("place-h2-sub")}
 					</h2>
 					<p className="text-[18px] mt-2 font-medium">
-						{pathname
-							? "Quyida taklif qilingan dam olish maskanlari bilan tanishib chiqing"
-							: "Quyidagi tur paketlar bilan tanishib chiqing"}
+						{pathname ? t("place-p") : t("place-p-sub")}
 					</p>
 				</div>
 

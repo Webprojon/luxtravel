@@ -11,7 +11,6 @@ import Tashkent from "./pages/Cities/Tashkent";
 import Turkiston from "./pages/Cities/Turkistan";
 import Villa from "./pages/Cities/Villa";
 import Zomin from "./pages/Cities/Zomin";
-import { Toaster } from "react-hot-toast";
 import Networks from "./components/Networks";
 import FaqPage from "./pages/FAQ/FaqPage";
 import Buxoro from "./pages/Cities/Buxoro";
@@ -38,7 +37,6 @@ function App() {
 				<Contact />
 				<Footer />
 				<Networks />
-				<Toaster position="top-center" />
 			</GlobalContextProvider>
 		</main>
 	);

@@ -9,15 +9,18 @@ import clietSix from "../../assets/Images/clients-imgs/telegram-cloud-document-2
 import clietSeven from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 1.png";
 import clietEight from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 2.png";
 import clietNine from "../../assets/Images/clients-imgs/telegram-cloud-photo-size-2-5188647207891491395-y 3.png";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+	const { t } = useTranslation();
+
 	const clientImages = [
 		{ src: clietOne, alt: "user img" },
 		{ src: clietTwo, alt: "user img" },
 		{
 			src: "",
 			alt: "Placeholder",
-			text: "Bu yerda sizning suratingiz bo'lishi mumkin",
+			text: t("img-text"),
 		},
 		{ src: clietThree, alt: "user img" },
 		{ src: clietFour, alt: "user img" },
@@ -35,7 +38,7 @@ export default function About() {
 		>
 			<div className="hidden">
 				<h1 className="text-center font-bold leading-5 text-[30px]">
-					Biz haqimizda quyidagi video orqali batafsil bilib oling
+					{t("about-h1")}
 				</h1>
 
 				<video
@@ -51,12 +54,9 @@ export default function About() {
 
 			<div className="mt-10 text-center">
 				<h2 className="font-medium text-[27px] leading-5">
-					<span className="font-bold">2,000</span> dan ortiq mijozlarimiz
-					bizning xizmatlarimizdan mamnun
+					<span className="font-bold">2,000</span> {t("about-h2")}
 				</h2>
-				<p className="font-medium text-[18px] my-4 leading-5">
-					Bizga ishonch bildirgan mijozlarimizning suratlaridan namunalar
-				</p>
+				<p className="font-medium text-[18px] my-4 leading-5">{t("about-p")}</p>
 			</div>
 
 			<div className="flex flex-wrap gap-6 mt-10">

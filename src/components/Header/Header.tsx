@@ -10,6 +10,19 @@ export default function Header() {
 	const { isToggle, setIsToggle } = useGlobalContext();
 	const [isScrolled, setIsScrolled] = useState(false);
 
+	useEffect(() => {
+		if (isToggle) {
+			document.body.classList.add("no-scroll-global");
+		} else {
+			document.body.classList.remove("no-scroll-global");
+		}
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [isToggle]);
+
 	const handleScroll = () => {
 		if (window.scrollY > 50) {
 			setIsScrolled(true);
@@ -17,13 +30,6 @@ export default function Header() {
 			setIsScrolled(false);
 		}
 	};
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
 
 	const handleToggle = () => {
 		setIsToggle(!isToggle);
