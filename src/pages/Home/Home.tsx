@@ -22,46 +22,45 @@ export default function Home() {
 	];
 
 	return (
-		<section
-			id="main"
-			className="pt-[9rem] mx-auto lg:max-w-[1250px] tracking-wide"
-		>
-			<h1 className="font-bold text-[46px] leading-[3.9rem] text-white">
-				{t("home-h1")} <br /> {t("home-h1-br")}
-			</h1>
-			<p className="text-white text-[18px] font-medium mt-4">{t("home-p")}</p>
+		<section id="main" className="pt-[8rem] mx-auto lg:max-w-[1250px]">
+			<div className="tracking-wide w-[920px]">
+				<h1 className="font-bold text-[46px] leading-[3.9rem] text-white">
+					{t("home-h1")}
+				</h1>
+				<p className="text-white text-[20px] font-medium mt-4">{t("home-p")}</p>
 
-			<div className="flex gap-x-7 mt-14">
-				{sections.map((item, i) => (
-					<div
-						key={i}
-						className="bg-white opacity-90 py-8 px-5 w-[250px] rounded-[20px] custom-shadow cursor-pointer hover:scale-105 transition-all"
+				<div className="flex gap-x-7 mt-14">
+					{sections.map((item, i) => (
+						<div
+							key={i}
+							className="bg-white opacity-90 py-8 px-5 w-[270px] rounded-[20px] custom-shadow cursor-pointer hover:scale-105 transition-all"
+						>
+							<h2 className="font-bold leading-5 text-black/80 text-[25px]">
+								{item.title}
+							</h2>
+							<p className="font-medium leading-5 text-black/70 pt-4">
+								{item.description}
+							</p>
+						</div>
+					))}
+				</div>
+
+				<div className="flex gap-x-8 mt-14">
+					<a
+						href="#contact"
+						className="py-5 px-9 bg-green-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow"
 					>
-						<h2 className="font-bold leading-5 text-black/80 text-[25px]">
-							{item.title}
-						</h2>
-						<p className="font-medium leading-5 text-black/70 pt-4">
-							{item.description}
-						</p>
-					</div>
-				))}
-			</div>
+						{t("home-btn")}
+					</a>
+					<a href="#turpaket">
+						<button className="py-5 px-9 bg-sky-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
+							{t("home-btn2")}
+						</button>
+					</a>
+				</div>
 
-			<div className="flex gap-x-8 mt-12">
-				<a
-					href="#contact"
-					className="py-5 px-9 bg-green-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow"
-				>
-					{t("home-btn")}
-				</a>
-				<a href="#turpaket">
-					<button className="py-5 px-9 bg-sky-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
-						{t("home-btn2")}
-					</button>
-				</a>
+				{isModal ? <Modal /> : null}
 			</div>
-
-			{isModal ? <Modal /> : null}
 		</section>
 	);
 }

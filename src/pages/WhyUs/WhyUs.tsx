@@ -1,9 +1,17 @@
 import { useTranslation } from "react-i18next";
-import bgImg from "../../assets/Images/generals/image 109.png";
-
+import { useLocation } from "react-router-dom";
 export default function WhyUsPage() {
 	const { t } = useTranslation();
+	const location = useLocation();
+	const pathname = location.pathname === "/";
 
+	// Background imgs
+	const firstBgImg =
+		"https://uzbekistan.travel/storage/app/media/fed/cropped-images/Dsc_0513---khiva-0-0-0-0-1582806011.jpg";
+	const secondBgImg =
+		"https://beaufortpoolcompany.com/wp-content/uploads/2023/01/Fiberglass-Pool-Installation.webp";
+
+	// Card items
 	const cards = [
 		{
 			title: t("whyus-card1.title"),
@@ -42,15 +50,16 @@ export default function WhyUsPage() {
 	return (
 		<section
 			style={{
-				background: `linear-gradient(to top, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0) 100%), url("${bgImg}") no-repeat center/cover`,
+				background: `linear-gradient(to top, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0) 100%),
+				 url("${pathname ? secondBgImg : firstBgImg}") no-repeat center/cover`,
 			}}
 			id="whyus"
 			className="mt-14 scroll-mt-20 flex flex-col justify-center h-[90vh]"
 		>
 			<div className="flex flex-col justify-center items-center lg:max-w-[1250px] mx-auto tracking-wide">
 				<div className="text-center">
-					<h2 className="text-white font-bold text-[30px]">{t("whyus-h2")}</h2>
-					<p className="text-white font-medium mb-5 text-[18px]">
+					<h2 className="text-white font-bold text-[34px]">{t("whyus-h2")}</h2>
+					<p className="text-white font-medium mb-5 text-[22px]">
 						{t("whyus-p")}
 					</p>
 				</div>

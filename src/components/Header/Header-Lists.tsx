@@ -21,7 +21,7 @@ export default function HeaderLists() {
 		},
 		{
 			path: "/buxoro",
-			src: "https://mediaim.expedia.com/destination/1/0fa07e58724840de3c528174f4eb921a.jpg",
+			src: "https://www.shutterstock.com/image-photo/bukhara-historical-city-uzbekistan-translation-600nw-2410842963.jpg",
 			alt: "imgs",
 			name: t("link2"),
 		},
