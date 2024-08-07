@@ -5,8 +5,8 @@ export default function Villa() {
 		<main
 			className="h-[100vh] w-full"
 			style={{
-				background: `linear-gradient(to top, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0) 100%), 
-				url("https://static.realting.com/uploads/images/3f1/445e22c2280ba1273ef81a36f446a.webp") no-repeat center/cover`,
+				background: `linear-gradient(to top, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0) 100%), 
+				url("https://www.alpsinluxury.com/attachments/photos/gallery/6481a5c3-4a50-47ae-be1d-43e20a000f09.jpg") no-repeat center/cover`,
 			}}
 		>
 			<Home />

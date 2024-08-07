@@ -14,7 +14,7 @@ export default function Networks() {
 	return (
 		<div className="relative z-[800]">
 			<div
-				className={`fixed right-[1.3rem] bottom-[6rem] flex flex-col gap-y-3 transition-transform duration-300 lg:right-[3rem] lg:bottom-[7rem] 
+				className={`fixed right-[1rem] bottom-[6rem] flex flex-col gap-y-3 transition-transform duration-300 lg:right-[3rem] lg:bottom-[7rem] 
 					 ${isClicked ? "translate-y-0" : "translate-y-16 opacity-0"}`}
 			>
 				<div className="flex justify-center items-center w-[3.1rem] h-[3.1rem] rounded-full bg-sky-900">
@@ -44,12 +44,12 @@ export default function Networks() {
 
 			<div
 				onClick={() => setIsClicked(!isClicked)}
-				className="w-[4rem] h-[4rem] flex justify-center items-center bg-green-500 text-white cursor-pointer fixed right-3 bottom-3 rounded-full lg:right-[2.5rem] lg:bottom-8"
+				className="w-[3.5rem] h-[3.5rem] md:w-[4rem] md:h-[4rem] flex justify-center items-center bg-green-500 text-white cursor-pointer fixed right-3 bottom-3 rounded-full lg:right-[2.5rem] lg:bottom-8"
 			>
 				{isClicked ? (
 					<IoMdClose className="size-7" />
 				) : (
-					<BiMessageRoundedDots className="size-10" />
+					<BiMessageRoundedDots className="size-8 md:size-10" />
 				)}
 			</div>
 		</div>

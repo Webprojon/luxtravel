@@ -33,7 +33,7 @@ export default function About() {
 	return (
 		<section
 			id="about"
-			className="mt-14 scroll-mt-32 lg:max-w-[1250px] mx-auto tracking-wide text-black/90"
+			className="md:mt-14 scroll-mt-32 lg:max-w-[1250px] mx-auto tracking-wide text-black/90"
 		>
 			<div className="hidden">
 				<h1 className="text-center font-bold leading-5 text-[30px]">
@@ -51,26 +51,28 @@ export default function About() {
 				></video>
 			</div>
 
-			<div className="mt-10 text-center">
-				<h2 className="font-medium text-[27px] leading-5">
+			<div className="mt-5 md:mt-10 text-center">
+				<h2 className="font-bold text-[20px] md:font-medium md:text-[27px] md:leading-5">
 					<span className="font-bold">2,000</span> {t("about-h2")}
 				</h2>
-				<p className="font-medium text-[18px] my-4 leading-5">{t("about-p")}</p>
+				<p className="font-medium md:text-[18px] my-4 leading-5">
+					{t("about-p")}
+				</p>
 			</div>
 
-			<div className="flex flex-wrap gap-6 mt-10">
+			<div className="grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-10 md:gap-x-6 mt-10">
 				{clientImages.map((client, index) => {
 					return client.src ? (
 						<img
 							key={index}
 							src={client.src}
 							alt={client.alt}
-							className="w-[230px] h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
+							className="w-[90%] mx-auto md:w-[230px] h-[240px] md:h-[160px] object-cover rounded-[12px] hover:scale-105 transition-all cursor-pointer custom-shadow"
 						/>
 					) : (
 						<div
 							key={index}
-							className="flex justify-center text-center font-medium items-center w-[230px] h-[160px] rounded-[12px] custom-shadow hover:scale-105 transition-all cursor-pointer"
+							className="flex justify-center text-center font-medium items-center w-[90%] px-4 md:px-0 mx-auto md:w-[230px] h-[220px] md:h-[160px] rounded-[12px] custom-shadow hover:scale-105 transition-all cursor-pointer"
 						>
 							<p>{client.text}</p>
 						</div>

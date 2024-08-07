@@ -286,21 +286,26 @@ export default function Services() {
 	return (
 		<section
 			id="service"
-			className={`mt-14 scroll-mt-28 ${pathname1 ? "hidden" : "block"}`}
+			className={`mt-8 md:mt-14 scroll-mt-28 ${pathname1 ? "hidden" : "block"}`}
 		>
-			<div className="flex flex-col items-center lg:max-w-[1250px] mx-auto">
+			<div className="flex flex-col items-center px-4 lg:max-w-[1250px] mx-auto">
 				<div className="text-center tracking-wide text-black/80">
-					<h2 className="text-[30px] font-bold">{t("service-h2")}</h2>
-					<p className="text-[18px] mt-2 font-medium">{t("service-p")}</p>
+					<h2 className="text-[20px] xs:text-[30px] font-bold">
+						{t("service-h2")}
+					</h2>
+					<p className="xs:text-[18px] mt-2 font-medium">{t("service-p")}</p>
 				</div>
 
-				<div className="flex justify-between w-full mt-12">
+				<div className="grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3  gap-4 md:gap-x-20 w-full mt-12">
 					{changeInformations.map((item) => (
-						<div key={item.day} className="h-[34vh] w-[350px] text-black/85">
-							<p className="flex justify-center items-center font-medium text-[24px] text-white w-16 h-16 bg-black/85 rounded-full">
+						<div
+							key={item.day}
+							className="flex flex-col justify-center items-center text-center md:h-[34vh] mx-auto w-[95%] xs:w-[230px] sm:w-[350px] text-black/85"
+						>
+							<p className="flex justify-center items-center font-medium text-[24px] text-white w-12 h-12 md:w-16 md:h-16 bg-black/85 rounded-full">
 								{item.day}
 							</p>
-							<h3 className="font-bold my-3 text-[20px]">{item.title}</h3>
+							<h3 className="font-bold my-3 sm:text-[20px]">{item.title}</h3>
 							<p className="font-medium">{item.description}</p>
 						</div>
 					))}
@@ -309,11 +314,11 @@ export default function Services() {
 					{t("service-btn")}
 				</button>
 
-				<div className="relative w-full flex justify-between p-12 tracking-wide border-2 border-green-400 rounded-[20px] mt-20">
-					<div className="absolute -top-9 left-[4rem] bg-green-400 text-white px-12 py-[3px] rounded-t-[15px] flex justify-center items-center font-bold text-[20px]">
+				<div className="relative w-full flex flex-col md:flex-row justify-between gap-y-4 md:p-12 tracking-wide border-2 border-green-400 rounded-[20px] mt-20">
+					<div className="absolute -top-9 left-[50%] -translate-x-1/2 md:-translate-x-0 md:left-[4rem] bg-green-400 text-white px-12 py-[3px] rounded-t-[15px] flex justify-center items-center font-bold text-[20px]">
 						{t("service-cost")}
 					</div>
-					<div className="absolute top-[1px] left-[5.4rem] shape bg-green-400 w-[100px] h-[80px]"></div>
+					<div className="absolute top-[1px] left-[50%] -translate-x-1/2 md:-translate-x-0 md:left-[5.4rem] shape bg-green-400 w-[100px] h-[80px]"></div>
 
 					{
 						<div className="flex flex-col gap-y-4">
