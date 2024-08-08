@@ -18,7 +18,8 @@ import Samarkand from "./pages/Cities/Samarkand";
 
 function App() {
 	return (
-		<main className="max-w-[1540px] mx-auto overflow-x-hidden">
+		//max-w-[1540px]
+		<main className="mx-auto overflow-x-hidden">
 			<GlobalContextProvider>
 				<Header />
 				<Routes>
