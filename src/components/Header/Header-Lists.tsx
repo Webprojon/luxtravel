@@ -78,7 +78,7 @@ export default function HeaderLists() {
 					<img
 						src={destination.src}
 						alt={destination.alt}
-						className="w-[4rem] h-[4rem] md:w-[5rem] md:h-[5rem] object-cover rounded-full"
+						className="w-[4rem] h-[4rem] object-cover rounded-full md:w-[5rem] md:h-[5rem]"
 					/>
 					{destination.name}
 				</Link>

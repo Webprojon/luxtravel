@@ -21,8 +21,8 @@ export default function Footer() {
 	return (
 		<footer>
 			<div
-				className="max-w-[500px] mt-14 md:mt-[8rem] pl-6 grid xs:grid-cols-2 sm:grid-cols-3
-			 md:grid-cols-4 gap-y-8 gap-x-20 mb-10 mx-auto xs:max-w-[460px] sm:max-w-[760px] md:max-w-[925px] lg:max-w-[1250px]"
+				className="max-w-[500px] mt-14 pl-6 grid gap-y-8 gap-x-20 mb-10 mx-auto xs:grid-cols-2 xs:max-w-[460px] sm:grid-cols-3 sm:max-w-[760px]
+				 md:grid-cols-4 md:mt-[8rem] md:max-w-[925px] lg:max-w-[1250px]"
 			>
 				<div className="w-[250px]">
 					<a href="#main">

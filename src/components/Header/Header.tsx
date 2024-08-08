@@ -59,7 +59,7 @@ export default function Header() {
 
 				<div
 					onClick={handleToggle}
-					className={`z-10 fixed right-0 top-0 bg-black/40 w-full h-full duration-300 
+					className={`z-[500] fixed right-0 top-0 bg-black/40 w-full h-full duration-300 
 					${isToggle ? "block" : "hidden"}`}
 				></div>
 

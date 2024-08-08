@@ -286,23 +286,23 @@ export default function Services() {
 	return (
 		<section
 			id="service"
-			className={`mt-8 md:mt-14 scroll-mt-28 ${pathname1 ? "hidden" : "block"}`}
+			className={`mt-8 scroll-mt-28 md:mt-14 ${pathname1 ? "hidden" : "block"}`}
 		>
-			<div className="flex flex-col items-center px-4 lg:max-w-[1250px] mx-auto">
+			<div className="flex flex-col items-center px-4 mx-auto lg:max-w-[1250px]">
 				<div className="text-center tracking-wide text-black/80">
-					<h2 className="text-[20px] xs:text-[30px] font-bold">
+					<h2 className="text-[20px] font-bold xs:text-[30px]">
 						{t("service-h2")}
 					</h2>
-					<p className="xs:text-[18px] mt-2 font-medium">{t("service-p")}</p>
+					<p className="mt-2 font-medium xs:text-[18px]">{t("service-p")}</p>
 				</div>
 
-				<div className="grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-14 md:gap-x-20 w-full mt-12">
+				<div className="grid gap-x-4 gap-y-14 w-full mt-12 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 md:gap-x-20">
 					{changeInformations.map((item) => (
 						<div
 							key={item.day}
-							className="flex flex-col justify-center items-center text-center md:h-[34vh] mx-auto w-[95%] xs:w-[230px] sm:w-[350px] text-black/85"
+							className="flex flex-col justify-center items-center text-center mx-auto w-[95%] text-black/85 xs:w-[230px] sm:w-[350px] md:h-[34vh]"
 						>
-							<p className="flex justify-center items-center font-medium text-[24px] text-white w-12 h-12 md:w-16 md:h-16 bg-black/85 rounded-full">
+							<p className="flex justify-center items-center font-medium text-[24px] text-white w-12 h-12 bg-black/85 rounded-full md:w-16 md:h-16">
 								{item.day}
 							</p>
 							<h3 className="font-bold my-3 sm:text-[20px]">{item.title}</h3>
@@ -317,23 +317,23 @@ export default function Services() {
 				</a>
 
 				<div
-					className="max-w-[500px] sm:max-w-[750px] md:max-w-[100%] relative w-full flex flex-col sm:flex-row flex-wrap justify-between
-				 gap-y-4 px-6 py-8 md:p-12 tracking-wide border-2 border-green-400 rounded-[20px] mt-[6rem]"
+					className="max-w-[500px] relative w-full flex flex-col flex-wrap justify-between gap-y-4 px-6 py-8 tracking-wide border-2 border-green-400 rounded-[20px] mt-[6rem] 
+					sm:flex-row sm:max-w-[750px] md:p-12 md:max-w-[100%]"
 				>
 					<div
-						className="absolute -top-9 left-[50%] -translate-x-1/2 md:-translate-x-0 md:left-[4rem] bg-green-400 text-white px-12 py-[3px] 
-					rounded-t-[15px] flex justify-center items-center font-bold text-[20px]"
+						className="absolute -top-9 left-[50%] -translate-x-1/2  bg-green-400 text-white px-12 py-[3px] rounded-t-[15px] flex justify-center
+						 items-center font-bold text-[20px] md:-translate-x-0 md:left-[4rem]"
 					>
 						{t("service-cost")}
 					</div>
-					<div className="absolute top-[1px] left-[50%] -translate-x-1/2 md:-translate-x-0 md:left-[5.4rem] shape bg-green-400 w-[100px] h-[80px]"></div>
+					<div className="absolute top-[1px] left-[50%] -translate-x-1/2 md:-translate-x-0 shape bg-green-400 w-[100px] h-[80px] md:left-[5.4rem]"></div>
 
 					{
 						<div className="flex flex-col gap-y-4">
 							{changeFirstColumnServices.map((service, index) => (
-								<div className="flex">
+								<div key={index} className="flex">
 									<GiCheckMark className="size-4 bg-green-400 text-white rounded-full w-[1.4rem] h-[1.4rem] p-1 mr-4" />
-									<span key={index}>{service}</span>
+									<span>{service}</span>
 								</div>
 							))}
 						</div>
@@ -342,9 +342,9 @@ export default function Services() {
 					{
 						<div className="flex flex-col gap-y-4">
 							{changeSecondColumnServices.map((service, index) => (
-								<div className="flex">
+								<div key={index} className="flex">
 									<GiCheckMark className="size-4 bg-green-400 text-white rounded-full w-[1.4rem] h-[1.4rem] p-1 mr-4" />
-									<span key={index}>{service}</span>
+									<span>{service}</span>
 								</div>
 							))}
 						</div>
@@ -356,13 +356,13 @@ export default function Services() {
 								<span className="px-6 uppercase py-[4px] text-white text-[14px] bg-green-400 font-medium rounded-md">
 									{item.countOfPeople}
 								</span>
-								<p className="font-medium text-[28px] md:text-[34px] mt-4 text-black/80">
+								<p className="font-medium text-[28px] mt-4 text-black/80 md:text-[34px]">
 									{item.price} so'm
 								</p>
 							</div>
 						))}
 						<a href="#contact">
-							<button className="mt-4 md:mt-8 py-3 px-10 bg-green-400 text-white rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
+							<button className="mt-4 py-3 px-10 bg-green-400 text-white rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow md:mt-8">
 								{t("service-bron-btn")}
 							</button>
 						</a>

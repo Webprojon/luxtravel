@@ -46,16 +46,16 @@ export default function Contact() {
 	};
 
 	return (
-		<section id="contact" className="mt-10 md:mt-20 scroll-mt-28 px-2">
-			<h2 className="mb-5 md:mb-10 text-center text-[30px] text-black/85 font-bold">
+		<section id="contact" className="mt-10 scroll-mt-28 px-2 md:mt-20">
+			<h2 className="mb-5 text-center text-[30px] text-black/85 font-bold md:mb-10">
 				{t("contact-h2")}
 			</h2>
 			<div
-				className="bg-black/85 max-w-[500px] rounded-[10px] sm:rounded-[15px] p-5 md:py-10 flex
-			 flex-col-reverse sm:flex-row justify-evenly mx-auto xs:max-w-[460px] sm:max-w-[760px] md:max-w-[925px] lg:max-w-[1250px]"
+				className="bg-black/85 rounded-[10px] p-5 flex flex-col-reverse justify-evenly mx-auto max-w-[500px]
+			 xs:max-w-[460px] sm:flex-row sm:max-w-[760px] sm:rounded-[15px] md:py-10 md:max-w-[925px] lg:max-w-[1250px]"
 			>
-				<div className="md:w-[500px] text-white mt-6 md:mt-0 sm:pl-10 sm:pr-20">
-					<p className="font-bold text-[22px] md:text-[28px] leading-none">
+				<div className="text-white mt-6 md:mt-0 sm:pl-10 sm:pr-20 md:w-[500px]">
+					<p className="font-bold text-[22px] leading-none md:text-[28px]">
 						{t("contact-p")}
 					</p>
 					<form

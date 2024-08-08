@@ -96,28 +96,28 @@ export default function Places() {
 	};
 
 	return (
-		<section id="turpaket" className="mt-10 md:mt-14 w-full">
-			<div className="max-w-[320px] mx-auto xs:max-w-[460px] sm:max-w-[880px] md:max-w-[925px] px-2 lg:max-w-[1250px]">
+		<section id="turpaket" className="mt-10 w-full md:mt-14">
+			<div className="mx-auto px-2 max-w-[385px] xs:max-w-[460px] sm:max-w-[880px] md:max-w-[925px] lg:max-w-[1250px]">
 				<div className="text-center tracking-wide text-black/80">
-					<h2 className="text-[24px] md:text-[30px] font-bold">
+					<h2 className="text-[24px] font-bold md:text-[30px]">
 						{pathname ? t("place-h2") : t("place-h2-sub")}
 					</h2>
-					<p className="md:text-[18px] mt-2 font-medium">
+					<p className="mt-2 font-medium md:text-[18px]">
 						{pathname ? t("place-p") : t("place-p-sub")}
 					</p>
 				</div>
 
-				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-12 mt-10">
+				<div className="grid gap-y-12 mt-10 sm:grid-cols-2 lg:grid-cols-3">
 					{(pathname ? cardData.fourCards : cardData.threeCards).map(
 						(card, index) => (
 							<div
 								key={index}
-								className="mx-auto xs:w-[450px] sm:w-[300px] md:w-[400px] rounded-[10px]"
+								className="mx-auto rounded-[10px] xs:w-[450px] sm:w-[300px] md:w-[400px]"
 							>
 								<img
 									src={card.imgSrc}
 									alt="imgs"
-									className="h-[35vh] xs:h-[47vh] md:h-[40vh] w-full rounded-[10px] md:rounded-[20px]"
+									className="h-[35vh] w-full rounded-[10px] xs:h-[47vh] md:h-[40vh] md:rounded-[20px]"
 								/>
 								<div>
 									<div className="flex justify-between font-medium mt-3 text-black/70">
@@ -131,19 +131,19 @@ export default function Places() {
 										</span>
 									</div>
 									<div className="flex items-center justify-between mt-2">
-										<h3 className="font-bold text-[26px] md:text-[28px] text-black/90">
+										<h3 className="font-bold text-[26px] text-black/90 md:text-[28px]">
 											{card.title}
 										</h3>
 										<img src={stars} alt="stars" />
 									</div>
-									<span className="flex items-center font-medium text-[20px] md:text-[24px] my-2 text-black/70">
+									<span className="flex items-center font-medium text-[20px] my-2 text-black/70 md:text-[24px]">
 										<GrLocation className="mr-3 size-6" />
 										{card.location}
 									</span>
 									<span className="text-amber-600 font-medium text-[22px] md:text-[24px]">
 										{card.price}
 									</span>
-									<p className="text-[14px] md:h-[17vh] text-black/70 mt-2 font-medium">
+									<p className="text-[14px] text-black/70 mt-2 font-medium md:h-[17vh]">
 										{card.description}
 									</p>
 									<a href="#contact">

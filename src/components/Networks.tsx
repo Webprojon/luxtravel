@@ -47,7 +47,8 @@ export default function Networks() {
 
 			<div
 				onClick={() => setIsClicked(!isClicked)}
-				className="w-[3.5rem] h-[3.5rem] md:w-[4rem] md:h-[4rem] flex justify-center items-center bg-green-500 text-white cursor-pointer fixed right-3 bottom-3 rounded-full lg:right-[2.5rem] lg:bottom-8"
+				className="w-[3.5rem] h-[3.5rem] flex justify-center items-center bg-green-500 text-white cursor-pointer fixed right-3 bottom-3 rounded-full 
+				md:w-[4rem] md:h-[4rem] lg:right-[2.5rem] lg:bottom-8"
 			>
 				{isClicked ? (
 					<IoMdClose className="size-7" />

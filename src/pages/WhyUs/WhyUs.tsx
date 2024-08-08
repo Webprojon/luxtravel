@@ -56,7 +56,7 @@ export default function WhyUsPage() {
 			id="whyus"
 			className="mt-14 scroll-mt-20 flex flex-col justify-center py-8 lg:h-[90vh]"
 		>
-			<div className="flex flex-col justify-center items-center lg:max-w-[1250px] mx-auto tracking-wide">
+			<div className="flex flex-col justify-center items-center mx-auto tracking-wide lg:max-w-[1250px]">
 				<div className="text-center">
 					<h2 className="text-white font-bold text-[18px] xs:text-[29px] md:text-[34px]">
 						{t("whyus-h2")}
@@ -66,11 +66,11 @@ export default function WhyUsPage() {
 					</p>
 				</div>
 
-				<div className="grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-y-10 md:gap-x-12 mt-6">
+				<div className="grid gap-y-10 mt-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 md:gap-x-12">
 					{cards.map((card, index) => (
 						<div
 							key={index}
-							className="w-[90%] h-[20vh] xs:h-auto mx-auto bg-white opacity-90 py-7 px-5 md:w-[275px] rounded-[20px] custom-shadow cursor-pointer hover:-translate-y-1 transition-all"
+							className="w-[90%] h-[20vh] mx-auto bg-white opacity-90 py-7 px-5 rounded-[20px] custom-shadow cursor-pointer hover:-translate-y-1 transition-all xs:h-auto md:w-[275px]"
 						>
 							<h2 className="font-bold leading-5 text-black/80 text-[25px]">
 								{card.title}
