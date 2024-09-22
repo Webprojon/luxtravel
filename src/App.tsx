@@ -15,30 +15,34 @@ import Networks from "./components/Networks";
 import FaqPage from "./pages/FAQ/FaqPage";
 import Buxoro from "./pages/Cities/Buxoro";
 import Samarkand from "./pages/Cities/Samarkand";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 function App() {
 	return (
 		//max-w-[1540px]
 		<main className="mx-auto overflow-x-hidden">
-			<GlobalContextProvider>
-				<Header />
-				<Routes>
-					<Route path="/" element={<Villa />} />
-					<Route path="/buxoro" element={<Buxoro />} />
-					<Route path="/tashkent" element={<Tashkent />} />
-					<Route path="/samarkand" element={<Samarkand />} />
-					<Route path="/turkiston" element={<Turkiston />} />
-					<Route path="/zomin" element={<Zomin />} />
-				</Routes>
-				<About />
-				<WhyUsPage />
-				<Services />
-				<Places />
-				<FaqPage />
-				<Contact />
-				<Footer />
-				<Networks />
-			</GlobalContextProvider>
+			<Provider store={store}>
+				<GlobalContextProvider>
+					<Header />
+					<Routes>
+						<Route path="/" element={<Villa />} />
+						<Route path="/buxoro" element={<Buxoro />} />
+						<Route path="/tashkent" element={<Tashkent />} />
+						<Route path="/samarkand" element={<Samarkand />} />
+						<Route path="/turkiston" element={<Turkiston />} />
+						<Route path="/zomin" element={<Zomin />} />
+					</Routes>
+					<About />
+					<WhyUsPage />
+					<Services />
+					<Places />
+					<FaqPage />
+					<Contact />
+					<Footer />
+					<Networks />
+				</GlobalContextProvider>
+			</Provider>
 		</main>
 	);
 }

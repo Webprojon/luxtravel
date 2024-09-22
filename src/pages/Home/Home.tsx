@@ -48,7 +48,7 @@ export default function Home() {
 					))}
 				</div>
 
-				<div className="flex flex-col gap-y-6 mt-14 sm:flex-row sm:gap-x-8">
+				<div className="flex flex-col items-start gap-y-6 mt-14 sm:flex-row sm:gap-x-8">
 					<a href="#contact">
 						<button className="py-5 px-9 bg-green-400 font-semibold text-white tracking-wide text-[18px] rounded-[12px] hover:scale-105 active:scale-95 transition-all custom-shadow">
 							{t("home-btn")}
